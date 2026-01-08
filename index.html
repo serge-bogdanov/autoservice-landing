@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/defult.css" />
+    <link rel="stylesheet" href="css/snippets.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="./script.js" defer></script>
+
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon" />
+    <title>Carmark</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <img
+            src="./icons/logo.svg"
+            alt="carmark"
+            class="logo__icon"
+            width="60"
+            height="60"
+          />
+        </a>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#about" class="header__menu-link">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Услуги</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Как купить</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Преимущества</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Отзывы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#contacts" class="header__menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <ul class="header__contacts-list">
+            <li class="header__contacts-item">
+              <a
+                href="#!"
+                class="header__social-icon social-icon social-icon--telegram"
+              ></a>
+            </li>
+            <li class="header__contacts-item">
+              <a
+                href="#!"
+                class="header__social-icon social-icon social-icon--whatsapp"
+              ></a>
+            </li>
+            <li class="header__contacts-item">
+              <a
+                href="#!"
+                class="header__social-icon social-icon social-icon--youtube"
+              ></a>
+            </li>
+          </ul>
+          <button
+            class="header__burger burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <ul class="header__contacts-numbers">
+            <li class="header__contacts-number">
+              <a class="header__contacts-number-link" href="tel:+78352675252">
+                +7 (8352) 67-52-52
+              </a>
+            </li>
+            <li class="header__contacts-number">
+              <a class="header__contacts-number-link" href="tel:+7279971242">
+                +7 (927) 997-12-42
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__text-wrapper">
+            <h1 class="hero__title">Купите автомобиль дешевле на 60%*</h1>
+            <p class="hero__description">
+              Привезем автомобиль под ключ со всеми документами. Подбор
+              автомобиля под любой запрос БЕСПЛАТНО
+            </p>
+            <button class="hero__button button">Оставить заявку</button>
+          </div>
+          <div class="hero__image">
+            <img
+              src="./images/hero/car.webp"
+              alt="Автомобиль"
+              width="818"
+              height="409"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="solutions">
+        <div class="container">
+          <div class="solutions__text-wrapper">
+            <h2 class="solutions__title medium-title">
+              Поможем вам выгодно купить и привезти автомобиль в любую точку
+              России
+            </h2>
+            <p class="solutions__description">
+              Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же
+              бюджет
+            </p>
+            <button class="solutions__button button">Оставить заявку</button>
+          </div>
+          <ul class="solutions__cards">
+            <li class="solutions__card solutions__card--key">
+              <h3 class="solutions__card-title">С пробегом</h3>
+              <p class="solutions__card-description">
+                Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+                Авито и Авто.ру
+              </p>
+            </li>
+            <li class="solutions__card">
+              <h3 class="solutions__card-title solutions__card--car">Новые</h3>
+              <p class="solutions__card-description">
+                Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
+                ценына Авито и Авто.ру
+              </p>
+            </li>
+            <li class="solutions__card solutions__card--coins">
+              <h3 class="solutions__card-title">Под ваш бюджет</h3>
+              <p class="solutions__card-description">
+                Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
+                ценына Авито и Авто.ру
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-us" id="about">
+        <div class="about-us__image">
+          <img
+          src="./images/about-us/about-us.webp"
+          alt="Команда автосалона за работой"
+          width="908"
+          height="655"
+          />
+        </div>
+          <div class="container">
+            <h2 class="about-us__title medium-title">О нас</h2>
+            <p class="about-us__description">
+              Мы автосалон и официальный партнер крупнейших мировых
+              авто-аукционов: IAA (Insurance Auto Auction), Copart, Manheim.
+            </p>
+            <ul class="about-us__list">
+              <li class="about-us__item about-us__item--car">
+                Работаем без посредников
+              </li>
+              <li class="about-us__item about-us__item--reward">
+                Успешный опыт 10 лет
+              </li>
+              <li class="about-us__item about-us__item--delivery">
+                Отлаженная логистика
+              </li>
+            </ul>
+            <p class="about-us__highlight">
+              Мы берем на себя полное сопровождение сделки до передачи
+              автомобиля в руки клиенту.
+            </p>
+            <button class="about-us__button button">Оставить заявку</button>
+          </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <h2 class="footer__title medium-title">Наши контакты</h2>
+        <dl class="footer__contacts">
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Адрес:</dt>
+            <dt class="footer__contact-value">
+              428000, г. Чебоксары, Марпосадское шоссе, 14.
+            </dt>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Время работы:</dt>
+            <dt class="footer__contact-value">Ежедневно 10:00 до 19:00</dt>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Телефон:</dt>
+            <dt class="footer__contact-value">
+              <ul class="footer__contact-value-numbers">
+                <li class="footer__contact-value-number">8 927 997 12 42</li>
+                <li class="footer__contact-value-number">8 927 997 12 42</li>
+              </ul>
+            </dt>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">E-mail:</dt>
+            <dt class="footer__contact-value">
+              <a href="mailto:carmark21@auto.ru">carmark21@auto.ru</a>
+            </dt>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Соц. сети:</dt>
+            <dt class="footer__contact-value">
+              <ul class="footer__contact-value-socials">
+                <li class="footer__contact-value-social">
+                  <a
+                    href="#!"
+                    class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--telegram"
+                  ></a>
+                </li>
+                <li class="footer__contact-value-social">
+                  <a
+                    href="#!"
+                    class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--whatsapp"
+                  ></a>
+                </li>
+                <li class="footer__contact-value-social">
+                  <a
+                    href="#!"
+                    class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--youtube"
+                  ></a>
+                </li>
+              </ul>
+            </dt>
+          </div>
+        </dl>
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/45/cheboksary/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Чебоксары</a
+          ><a
+            href="https://yandex.ru/maps/45/cheboksary/house/marposadskoye_shosse_14/YE4YdQVjSUwBQFtsfX1zd3RrYQ==/?ll=47.323179%2C56.126864&utm_medium=mapframe&utm_source=maps&z=19.93"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Марпосадское шоссе, 14 — Яндекс Карты</a
+          ><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=47.323179%2C56.126864&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzE4ODQ5MTUShQHQoNC-0YHRgdC40Y8sINCn0YPQstCw0YjRgdC60LDRjyDQoNC10YHQv9GD0LHQu9C40LrQsCDigJQg0KfRg9Cy0LDRiNC40Y8sINCn0LXQsdC-0LrRgdCw0YDRiywg0JzQsNGA0L_QvtGB0LDQtNGB0LrQvtC1INGI0L7RgdGB0LUsIDE0IgoN2Uo9QhXugWBC&z=19.93"
+            width="1280"
+            height="320"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+            class="footer__map"
+          ></iframe>
+        </div>
+        <ul class="footer__copyright">
+          <li class="footer__copyright-item">
+            <a href="#!" class="footer__copyright-link">Реквизиты</a>
+          </li>
+          <li class="footer__copyright-item">
+            <a href="#!" class="footer__copyright-link"
+              >Политика конфиденциальности
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

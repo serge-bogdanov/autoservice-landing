@@ -1,0 +1,258 @@
+.header__burger {
+  display: none;
+}
+.header {
+  padding-top: 40px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.header__menu-link {
+  transition-duration: var(--transition-duration);
+}
+.header__menu-link:hover {
+  color: var(--color-red);
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  column-gap: 26px;
+}
+.header__contacts-list {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+/* hero */
+
+.hero {
+  margin-top: 120px;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.hero__title {
+  max-width: 680px;
+  font-weight: 900;
+  font-size: clamp(2rem, 2rem + 2vw, 3.125rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero__description {
+  margin-bottom: 44px;
+  max-width: 580px;
+  font-weight: 500;
+  font-size: clamp(1rem, 1rem + 0.2vw, 1.25rem);
+  line-height: 1.6;
+}
+.hero__image {
+  max-width: 700px;
+  aspect-ratio: 2 / 1;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* solutions */
+
+.solutions {
+  background-color: var(--color-light-alt);
+  padding-block: 120px;
+  margin-top: 40px;
+}
+
+.solutions__title {
+  margin-bottom: 20px;
+}
+.solutions__text-wrapper {
+  margin-inline: auto;
+  max-width: 1000px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.solutions__description {
+  margin-bottom: 28px;
+}
+
+.solutions__button {
+  padding: 14px 40px;
+}
+
+.solutions__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+}
+
+.solutions__card {
+  background-color: var(--color-light);
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 24px 32px;
+
+  position: relative;
+  /* для картинки */
+}
+
+.solutions__card-title {
+  font-weight: 700;
+  font-size: clamp(1.75rem, 1.65rem + 0.5vw, 2.25rem);
+  line-height: 1.22;
+  margin-bottom: 26px;
+}
+.solutions__card-description {
+  max-width: 300px;
+  margin-bottom: 86px;
+}
+
+/* about us */
+
+.about-us {
+  display: flex;
+  column-gap: 5.2vw;
+}
+
+.about-us__image {
+  max-height: 655px;
+  aspect-ratio: 908 / 655;
+  overflow: hidden;
+}
+
+.about-us__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us .container {
+  padding-block: 44px;
+  margin-inline: 0;
+  max-width: 600px;
+}
+.about-us__title {
+  margin-bottom: 12px;
+}
+.about-us__description {
+  font-size: clamp(1rem, 1rem + 0.4vw, 1.5rem);
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  margin-block: 20px;
+}
+
+.about-us__item {
+  font-weight: 500;
+  font-size: clamp(1rem, 1rem + 0.2vw, 1.25rem);
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.about-us__item::before {
+  content: "";
+  width: 52px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us__item--car::before {
+  background-image: url("../icons/about-us/car.svg");
+}
+.about-us__item--reward::before {
+  background-image: url("../icons/about-us/reward.svg");
+}
+.about-us__item--delivery::before {
+  background-image: url("../icons/about-us/delivery.svg");
+}
+
+.about-us__highlight {
+  font-weight: 500;
+  line-height: 1.5;
+  border: 3px solid var(--color-red-translucent);
+  border-radius: 10px;
+  padding: 12px 40px 12px 20px;
+  max-width: 500px;
+
+  margin-bottom: 30px;
+}
+
+.about-us__button {
+  padding: 14px 40px;
+}
+
+/* footer */
+
+.footer {
+  padding-block: 100px 44px;
+  background-color: var(--color-light-alt);
+}
+
+.footer__title {
+  margin-bottom: 56px;
+}
+
+.footer__contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+}
+.footer__contact-name {
+  line-height: 1;
+  opacity: 0.5;
+}
+.footer__contact-value {
+  font-weight: 500;
+  line-height: 1.4;
+}
+.footer__contact-value-socials {
+  display: flex;
+  column-gap: 12px;
+}
+.footer__map {
+  border-radius: 18px;
+  border: none;
+  margin-bottom: 54px;
+  width: 100%;
+}
+.footer__copyright {
+  display: flex;
+  column-gap: 60px;
+}
+
+.footer__copyright-link {
+  font-weight: 500;
+  text-decoration-line: underline;
+  opacity: 0.3;
+}

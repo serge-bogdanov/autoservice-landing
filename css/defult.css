@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterBlack.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-light-alt: #f4f6f8;
+  --color-light-grey: #c1c1c1;
+  --color-dark-grey: #242628;
+  --color-red: #f50e30;
+  --color-red-translucent: rgba(250, 0, 44, 0.15);
+
+  --font-family: "Inter";
+
+  --container: 1280px;
+  --padding-inline: 30px;
+
+  --container-width: calc(var(--container) + var(--padding-inline) * 2);
+
+  --transition-duration: 0.4s;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+*::selection {
+  background-color: var(--color-red-translucent);
+}
