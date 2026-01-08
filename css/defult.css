@@ -54,6 +54,9 @@
   --container-width: calc(var(--container) + var(--padding-inline) * 2);
 
   --transition-duration: 0.4s;
+
+  --z-menu: 100;
+  --z-burger: 200;
 }
 
 body {

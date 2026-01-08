@@ -69,7 +69,7 @@
 
 .burger {
   position: relative;
-  z-index: 200;
+  z-index: var(--z-burger);
 
   background-color: transparent;
   width: 24px;
