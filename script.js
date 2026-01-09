@@ -33,3 +33,4 @@ if (document.documentElement.offsetWidth <= 1180) {
   menu.append(menuCopyright)  
 
 }
+

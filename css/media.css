@@ -10,10 +10,11 @@
     width: 40px;
   }
   body.active-menu {
-    overflow-y: hidden;
+    height: 100%;
+    overflow: hidden;
   }
   .active-menu .header__menu {
-    transform: translateX(0)
+    transform: translateX(0);
   }
   /* header */
   .header__burger {
@@ -36,14 +37,13 @@
     align-items: center;
 
     padding-top: 50px;
-    
+
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
 
     transform: translateX(-100%);
     transition: transform var(--transition-duration);
-    pointer-events: none;
   }
   .header__menu-list {
     flex-direction: column;
