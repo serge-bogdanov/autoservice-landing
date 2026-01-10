@@ -15,6 +15,22 @@
   max-width: 280px;
 }
 
+.download-agreement {
+  font-weight: 500;
+  font-size: clamp(1rem, 1rem + 0.2vw, 1.25rem);
+  line-height: 1.2;
+  color: var(--color-red);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.download-agreement::before {
+  content: "";
+  width: 24px;
+  aspect-ratio: 1;
+  background: url("../icons/download.svg") center/cover no-repeat;
+}
 .medium-title {
   font-weight: 800;
   font-size: clamp(1.75rem, 1.5rem + 2vw, 2.75rem);

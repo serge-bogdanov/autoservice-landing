@@ -204,6 +204,120 @@
   padding: 14px 40px;
 }
 
+/* agreement */
+
+.agreement {
+  padding-block: 100px;
+  background: linear-gradient(
+      180.16deg,
+      #f4f6f8 32.38%,
+      rgba(255, 255, 255, 0) 97.32%
+    ),
+    url(../images/agreement/agreement-background.webp) center/cover no-repeat;
+}
+.agreement__title {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.agreement__grid {
+  display: grid;
+  gap: 24px;
+}
+
+.agreement__item {
+  background-color: var(--color-light);
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.agreement__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* guarantees */
+
+.guarantees {
+  margin-bottom: 100px;
+}
+.guarantees__grid {
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+  grid-auto-rows: 1fr;
+
+  margin-bottom: 22px;
+}
+.guarantees__item {
+  font-weight: 500;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+  padding: 26px 40px ;
+  text-wrap: balance;
+
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.guarantees__item::before {
+  content: "";
+  width: 60px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+.guarantees__item--refund::before {
+  background-image: url("../icons/guarantees/refund.svg");
+}
+.guarantees__item--contract::before {
+  background-image: url("../icons/guarantees/contract.svg");
+}
+.guarantees__item--contract-transparent::before {
+  background-image: url("../icons/guarantees/contract-transparent.svg");
+}
+.guarantees__item--payment::before {
+  background-image: url("../icons/guarantees/payment.svg");
+}
+.guarantees__item--car-quality::before {
+  background-image: url("../icons/guarantees/car-quality.svg");
+}
+.guarantees__item--insurance::before{
+  background-image: url("../icons/guarantees/insurance.svg");
+}
+.guarantees__description {
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+  line-height: 1.33;
+  max-width: 740px;
+}
+
+/* benefits */
+
+.benefits__grid {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.benefits__item {
+  padding: 40px 44px;
+}
+
+.benefits__item:nth-child(1),
+.benefits__item:nth-child(4) {
+  grid-column: span 4;
+}
+.benefits__item:nth-child(2),
+.benefits__item:nth-child(3) {
+  grid-column: span 3;
+}
+.benefits__item-title {
+  font-weight: 700;
+  font-size: clamp(1rem, 1rem + 1vw, 2rem);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.benefits__item-description {
+  font-size: clamp(1rem, 1rem + 0.2vw, 1.25rem);
+  line-height: 1.6;
+}
+
 /* footer */
 
 .footer {

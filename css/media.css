@@ -147,6 +147,21 @@
   .about-us__item::before {
     width: 44px;
   }
+
+  /* benefits */
+
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+  .benefits__item {
+    grid-column: span 1 !important;
+  }
+
+  /* agreement */
+  .agreement__text-wrapper {
+    flex-direction: column;
+    row-gap: 16px;
+  }
   /* footer */
   .footer {
     padding-block: 60px 26px;
@@ -175,6 +190,19 @@
 
   .about-us .container {
     text-align: start;
+  }
+
+  /* guarantees */
+
+  .guarantees__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guarantees__item {
+    padding: 14px 20px;
+  }
+  .guarantees__item::before {
+    width: 44px;
   }
 
   /* footer */
