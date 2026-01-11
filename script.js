@@ -21,7 +21,7 @@ if (document.documentElement.offsetWidth <= 1180) {
 
   const menuPhoneNumber = document.createElement("a")
   menuPhoneNumber.textContent = "8 927 997 12 42"
-  menuPhoneNumber.setAttribute("href", "mailto:+89279971242")
+  menuPhoneNumber.setAttribute("href", "mailto:+79279971242")
   menuPhoneNumber.classList.add("menu__number")
   menu.append(menuPhoneNumber)
   

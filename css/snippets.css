@@ -4,6 +4,18 @@
   margin-inline: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .button {
   padding: 16px 54px;
   background-color: var(--color-red);
@@ -51,12 +63,9 @@
   transition-duration: var(--transition-duration);
 }
 
-@media (min-width: 1180px) {
-  .social-icon:hover {
-    background-color: var(--color-red);
-  }
+.social-icon--colorful {
+  background-color: var(--color-red);
 }
-
 .social-icon::before {
   content: "";
   width: 16px;
@@ -71,16 +80,6 @@
 .social-icon--youtube::before {
   background-image: url("../icons/socials/youtube.svg");
 }
-
-.social-icon--colorful {
-  background-color: var(--color-red);
-}
-@media (min-width: 1180px) {
-  .social-icon--colorful:hover {
-    background-color: var(--color-dark);
-  }
-}
-
 /* burger menu */
 
 .burger {

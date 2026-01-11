@@ -1,3 +1,12 @@
+@media (min-width: 1180px) {
+  .social-icon:hover {
+    background-color: var(--color-red);
+  }
+  .social-icon--colorful:hover {
+    background-color: var(--color-dark);
+  }
+}
+
 @media (max-width: 1180px) {
   /* variebles */
 
@@ -153,8 +162,8 @@
   .benefits__grid {
     grid-template-columns: 1fr;
   }
-  .benefits__item {
-    grid-column: span 1 !important;
+  .agreement__benefits .benefits__item {
+    grid-column: span 1;
   }
 
   /* agreement */

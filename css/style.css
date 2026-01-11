@@ -359,6 +359,7 @@
   border: none;
   margin-bottom: 54px;
   width: 100%;
+  position: relative
 }
 .footer__copyright {
   display: flex;
