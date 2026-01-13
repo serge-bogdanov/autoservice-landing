@@ -250,7 +250,7 @@
 .guarantees__item {
   font-weight: 500;
   font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
-  padding: 26px 40px ;
+  padding: 26px 40px;
   text-wrap: balance;
 
   display: flex;
@@ -280,7 +280,7 @@
 .guarantees__item--car-quality::before {
   background-image: url("../icons/guarantees/car-quality.svg");
 }
-.guarantees__item--insurance::before{
+.guarantees__item--insurance::before {
   background-image: url("../icons/guarantees/insurance.svg");
 }
 .guarantees__description {
@@ -316,6 +316,41 @@
 .benefits__item-description {
   font-size: clamp(1rem, 1rem + 0.2vw, 1.25rem);
   line-height: 1.6;
+}
+
+/* accordion */
+
+.faq {
+  padding-block: 100px;
+}
+
+.accordion {
+}
+.accordion__details {
+}
+.accordion__summary {
+  padding: 24px 16px;
+}
+.accordion__title {
+  font-weight: 600;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+  line-height: 1.33;
+}
+.accordion__content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition-duration: var(--transition-duration);
+}
+.accordion__content-body {
+  overflow: hidden;
+}
+.accordion__details[open] + .accordion__content {
+  grid-template-rows: 1fr;
+}
+.accordion__text {
+  font-size: clamp(1rem, 1rem + 0.2vw, 1.25rem);
+  line-height: 1.2;
+  opacity: 0.8;
 }
 
 /* footer */
@@ -359,7 +394,7 @@
   border: none;
   margin-bottom: 54px;
   width: 100%;
-  position: relative
+  position: relative;
 }
 .footer__copyright {
   display: flex;
