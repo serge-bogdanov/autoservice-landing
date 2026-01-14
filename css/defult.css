@@ -40,9 +40,9 @@
 :root {
   --color-dark: #000000;
   --color-dark-translucent: rgb(0 0 0 / 0.8);
+  --color-dark-transparent: rgb(0 0 0 / 0.3);
   --color-light: #ffffff;
   --color-light-alt: #f4f6f8;
-  --color-light-grey: #c1c1c1;
   --color-dark-grey: #242628;
   --color-red: #f50e30;
   --color-red-translucent: rgb(250 0 44 / 0.15);

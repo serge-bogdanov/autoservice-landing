@@ -61,6 +61,23 @@
     margin-top: 30px;
   }
 
+  .accordion__button {
+    width: 44px;
+  }
+
+  .accordion__summary {
+    column-gap: 40px;
+  }
+
+  .faq__accordion-button-line:nth-child(1) {
+    width: 18px;
+    height: 2px;
+  }
+  .faq__accordion-button-line:nth-child(2) {
+    width: 2px;
+    height: 18px;
+  }
+
   /* menu */
 
   .menu__copyright {
@@ -157,6 +174,20 @@
     width: 44px;
   }
 
+  /* process */
+
+  .process__step-content-item {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .process__step {
+    padding-left: 0;
+  }
+  .process__step-button-line {
+    width: 13px;
+    height: 2px;
+  }
+
   /* benefits */
 
   .benefits__grid {
@@ -170,23 +201,6 @@
   .agreement__text-wrapper {
     flex-direction: column;
     row-gap: 16px;
-  }
-
-  /* faq  (accordion) */
-
-  .accordion__button {
-    width: 44px;
-  }
-  .accordion__button-line:nth-child(1) {
-    width: 18px;
-    height: 2px;
-  }
-  .accordion__button-line:nth-child(2) {
-    width: 2px;
-    height: 18px;
-  }
-  .accordion__summary {
-    column-gap: 40px;
   }
 
   /* footer */
