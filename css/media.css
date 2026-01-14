@@ -171,6 +171,24 @@
     flex-direction: column;
     row-gap: 16px;
   }
+
+  /* faq  (accordion) */
+
+  .accordion__button {
+    width: 44px;
+  }
+  .accordion__button-line:nth-child(1) {
+    width: 18px;
+    height: 2px;
+  }
+  .accordion__button-line:nth-child(2) {
+    width: 2px;
+    height: 18px;
+  }
+  .accordion__summary {
+    column-gap: 40px;
+  }
+
   /* footer */
   .footer {
     padding-block: 60px 26px;
