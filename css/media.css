@@ -219,6 +219,31 @@
   }
 }
 
+@media (max-width: 775px) {
+
+  /* team */
+  .team__cards {
+    grid-template-columns: minmax(200px, 320px);
+    justify-content: center;
+  }
+  .team__card-figure {
+    padding: 0;
+    min-height: auto;
+    gap: 12px;
+  }
+  .team__card-image {
+    position: relative;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+  .team__card-caption {
+    text-align: center;
+  }
+  .team__card-contacts-list {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 680px) {
   .solutions__cards {
     grid-template-columns: 1fr;
