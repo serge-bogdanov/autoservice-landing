@@ -282,11 +282,8 @@
 
 .agreement {
   padding-block: 100px;
-  background: linear-gradient(
-      180.16deg,
-      #f4f6f8 32.38%,
-      rgba(255, 255, 255, 0) 97.32%
-    ),
+  background:
+    linear-gradient(180.16deg, #f4f6f8 32.38%, rgba(255, 255, 255, 0) 97.32%),
     url(../images/agreement/agreement-background.webp) center/cover no-repeat;
 }
 .agreement__title {
@@ -391,6 +388,99 @@
   font-size: clamp(1rem, 1rem + 0.2vw, 1.25rem);
   line-height: 1.6;
   color: var(--color-dark-translucent);
+}
+
+/* achievements */
+
+.achievement {
+  padding-block: 100px;
+}
+
+.achievement__header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 45px;
+}
+.achievement__header-content,
+.achievement__description {
+  max-width: 720px;
+}
+.achievement__title {
+  margin-bottom: 20px;
+}
+
+.achievement__description {
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+  line-height: 1.33;
+  opacity: 0.8;
+
+  margin-bottom: 32px;
+}
+
+.achievement__header-highlight {
+  max-width: 410px;
+  border: 3px solid var(--color-red-translucent);
+  border-radius: 10px;
+  padding: 16px 30px;
+  font-weight: 500;
+  font-size: clamp(1.2rem, 1rem + 0.25vw, 1.25rem);
+  line-height: 1.1;
+}
+.achievement__header-highlight--accent {
+  color: var(--color-red);
+  font-weight: 700;
+  font-size: clamp(1.2rem, 1rem + 1.25vw, 2.25rem);
+}
+.carousel__track {
+  --slides-viewport: 3;
+  --slides-gap: 24px;
+  display: grid;
+  grid-auto-columns: calc((100% - ((var(--slides-viewport) - 1) * var(--slides-gap)) ) / var(--slides-viewport));
+  column-gap: var(--slides-gap) ;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+.carousel__track::-webkit-scrollbar {
+  display: none;
+}
+.carousel {
+  position: relative;
+  padding-inline:  calc(var(--button-width) / 2);
+}
+.carousel__slide {
+  scroll-snap-align: start;
+}
+.carousel__slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-red);
+  width: var(--button-width);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: var(--color-light);
+}
+.carousel__button--prev {
+  left: 0;
+}
+.carousel__button--next {
+  right: 0;
 }
 
 /* team */

@@ -203,6 +203,27 @@
     row-gap: 16px;
   }
 
+  /* achievement */
+
+  .carousel__track {
+    --slides-viewport: 2;
+    --slides-gap: 16px;
+  }
+
+  .achievement .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .achievement__header,
+  .achievement__header-content {
+    display: contents;
+  }
+
+  .achievement__button {
+    order: 1;
+  }
   /* footer */
   .footer {
     padding-block: 60px 26px;
@@ -220,6 +241,15 @@
 }
 
 @media (max-width: 775px) {
+  /* achievement */
+
+  .carousel__track {
+    --slides-viewport: 1;
+  }
+
+  .carousel__button {
+    display: none;
+  }
 
   /* team */
   .team__cards {

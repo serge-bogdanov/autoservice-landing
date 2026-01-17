@@ -48,6 +48,7 @@
   --color-red-translucent: rgb(250 0 44 / 0.15);
 
   --font-family: "Inter";
+  --button-width: 64px;
 
   --container: 1280px;
   --padding-inline: 30px;
