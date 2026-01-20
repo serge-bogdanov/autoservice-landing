@@ -224,6 +224,15 @@
   .achievement__button {
     order: 1;
   }
+
+  /* consult */
+
+  .consult .container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+  }
+
   /* footer */
   .footer {
     padding-block: 60px 26px;

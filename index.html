@@ -1,894 +1,1252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/defult.css" />
+    <link rel="stylesheet" href="css/snippets.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/defult.css" />
-  <link rel="stylesheet" href="css/snippets.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/media.css" />
+    <script src="./script.js" defer></script>
 
-  <script src="./script.js" defer></script>
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon" />
+    <title>Carmark</title>
+  </head>
 
-  <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon" />
-  <title>Carmark</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <a href="./index.html" class="logo">
-        <img src="./icons/logo.svg" alt="carmark" class="logo__icon" width="60" height="60" />
-      </a>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a href="#about" class="header__menu-link">О нас</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#!" class="header__menu-link">Услуги</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#how-to-buy" class="header__menu-link">Как купить</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#benefits" class="header__menu-link">Преимущества</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#!" class="header__menu-link">Отзывы</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#contacts" class="header__menu-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__contacts">
-        <ul class="header__contacts-list">
-          <li class="header__contacts-item">
-            <a href="#!" class="header__social-icon social-icon social-icon--telegram"></a>
-          </li>
-          <li class="header__contacts-item">
-            <a href="#!" class="header__social-icon social-icon social-icon--whatsapp"></a>
-          </li>
-          <li class="header__contacts-item">
-            <a href="#!" class="header__social-icon social-icon social-icon--youtube"></a>
-          </li>
-        </ul>
-        <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </button>
-        <ul class="header__contacts-numbers">
-          <li class="header__contacts-number">
-            <a class="header__contacts-number-link" href="tel:+78352675252">
-              +7 (8352) 67-52-52
-            </a>
-          </li>
-          <li class="header__contacts-number">
-            <a class="header__contacts-number-link" href="tel:+7279971242">
-              +7 (927) 997-12-42
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
+  <body>
+    <header class="header">
       <div class="container">
-        <div class="hero__text-wrapper">
-          <h1 class="hero__title">Купите автомобиль дешевле на 60%*</h1>
-          <p class="hero__description">
-            Привезем автомобиль под ключ со всеми документами. Подбор
-            автомобиля под любой запрос БЕСПЛАТНО
-          </p>
-          <button class="hero__button button">Оставить заявку</button>
-        </div>
-        <div class="hero__image">
-          <img src="./images/hero/car.webp" alt="Автомобиль" width="818" height="409" />
-        </div>
-      </div>
-    </section>
-    <section class="solutions">
-      <div class="container">
-        <div class="solutions__text-wrapper">
-          <h2 class="solutions__title medium-title">
-            Поможем вам выгодно купить и привезти автомобиль в любую точку
-            России
-          </h2>
-          <p class="solutions__description">
-            Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же
-            бюджет
-          </p>
-          <button class="solutions__button button">Оставить заявку</button>
-        </div>
-        <ul class="solutions__cards">
-          <li class="solutions__card solutions__card--key">
-            <h3 class="solutions__card-title">С пробегом</h3>
-            <p class="solutions__card-description">
-              Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
-              Авито и Авто.ру
-            </p>
-          </li>
-          <li class="solutions__card">
-            <h3 class="solutions__card-title solutions__card--car">Новые</h3>
-            <p class="solutions__card-description">
-              Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
-              ценына Авито и Авто.ру
-            </p>
-          </li>
-          <li class="solutions__card solutions__card--coins">
-            <h3 class="solutions__card-title">Под ваш бюджет</h3>
-            <p class="solutions__card-description">
-              Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
-              ценына Авито и Авто.ру
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="about-us" id="about">
-      <div class="about-us__image">
-        <img src="./images/about-us/about-us.webp" alt="Команда автосалона за работой" width="908" height="655" />
-      </div>
-      <div class="container">
-        <h2 class="about-us__title medium-title">О нас</h2>
-        <p class="about-us__description">
-          Мы автосалон и официальный партнер крупнейших мировых
-          авто-аукционов: IAA (Insurance Auto Auction), Copart, Manheim.
-        </p>
-        <ul class="about-us__list">
-          <li class="about-us__item about-us__item--car">
-            Работаем без посредников
-          </li>
-          <li class="about-us__item about-us__item--reward">
-            Успешный опыт 10 лет
-          </li>
-          <li class="about-us__item about-us__item--delivery">
-            Отлаженная логистика
-          </li>
-        </ul>
-        <p class="about-us__highlight">
-          Мы берем на себя полное сопровождение сделки до передачи автомобиля
-          в руки клиенту.
-        </p>
-        <button class="about-us__button button">Оставить заявку</button>
-      </div>
-    </section>
-    <section class="process" id="how-to-buy">
-      <div class="container">
-        <h2 class="process__title medium-title">Процесс покупки</h2>
-        <ul class="process__steps">
-          <li class="process__step accordion">
-            <details class="process__step-details accordion__details" name="step">
-              <summary class="process__step-summary accordion__summary">
-                <div class="accordion__title process__step-title">
-                  <span class="process__step-title-number">01</span>
-                  <span class="process__step-title-text">
-                    Подбор автомобиля
-                  </span>
-                </div>
-                <div class="process__step-button accordion__button">
-                  <span class="process__step-button-line accordion__button-line"></span>
-                  <span class="process__step-button-line accordion__button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="process__step-content accordion__content">
-              <div class="process__step-content-body accordion__content-body">
-                <dl class="process__step-content-list">
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">Консультация</dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Индивидуальный подход и консультация от опытных
-                      специалистов по всем вопросам, связанным с выбором,
-                      доставкой и стоимостью автомобиля и другими расходами.
-                    </dd>
-                  </div>
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Предварительный договор
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Подписывается предварительный договор, на подбор
-                      автомобиля согласно вашим требованиям, на условиях:
-                      Депозитный платеж 1000$
-                      <button type="button" class="process__step-content-button download-agreement">
-                        Скачать пример договора
-                      </button>
-                    </dd>
-                  </div>
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Подбор автомобиля
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Ваш персональный менеджер ведете поиск автомобиля, на
-                      площадках наших партнеров IAAI и Copart. Период поиска
-                      автомобиля в среднем занимает 2 недели
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </li>
-          <li class="process__step accordion">
-            <details class="process__step-details accordion__details" name="step">
-              <summary class="process__step-summary accordion__summary">
-                <div class="accordion__title process__step-title">
-                  <span class="process__step-title-number">02</span>
-                  <span class="process__step-title-text"> Покупка </span>
-                </div>
-                <div class="process__step-button accordion__button">
-                  <span class="process__step-button-line accordion__button-line"></span>
-                  <span class="process__step-button-line accordion__button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="process__step-content accordion__content">
-              <div class="process__step-content-body accordion__content-body">
-                <dl class="process__step-content-list">
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Аукцион и ставка
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Менеджер участвует в торгах на аукционе от вашего имени.
-                      При победе фиксируется ставка и вносится депозит; мы
-                      сопровождаем все взаимодействия с площадкой и
-                      подтверждаем победу.
-                    </dd>
-                  </div>
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Оплата и оформление
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Вносится полная оплата по договору, оформляются счета и
-                      сопроводительные документы. Мы помогаем с подготовкой
-                      пакета документов для таможни и вывоза.
-                    </dd>
-                  </div>
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Подготовка к отправке
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Автомобиль проходит финальную проверку, фиксируется
-                      состояние, выполняются необходимые работы и
-                      подготавливается к погрузке. После этого организуется
-                      перевозка до порта/склада отправки.
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </li>
-          <li class="process__step accordion">
-            <details class="process__step-details accordion__details" name="step">
-              <summary class="process__step-summary accordion__summary">
-                <div class="accordion__title process__step-title">
-                  <span class="process__step-title-number">03</span>
-                  <span class="process__step-title-text">
-                    Доставка в ваш город
-                  </span>
-                </div>
-                <div class="process__step-button accordion__button">
-                  <span class="process__step-button-line accordion__button-line"></span>
-                  <span class="process__step-button-line accordion__button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="process__step-content accordion__content">
-              <div class="process__step-content-body accordion__content-body">
-                <dl class="process__step-content-list">
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Аукцион и ставка
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Менеджер участвует в торгах на аукционе от вашего имени.
-                      При победе фиксируется ставка и вносится депозит; мы
-                      сопровождаем все взаимодействия с площадкой и
-                      подтверждаем победу.
-                    </dd>
-                  </div>
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Оплата и оформление
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Вносится полная оплата по договору, оформляются счета и
-                      сопроводительные документы. Мы помогаем с подготовкой
-                      пакета документов для таможни и вывоза.
-                    </dd>
-                  </div>
-                  <div class="process__step-content-item">
-                    <dt class="process__step-content-name">
-                      Подготовка к отправке
-                    </dt>
-                    <dd class="process__step-content-value accordion__content-text">
-                      Автомобиль проходит финальную проверку, фиксируется
-                      состояние, выполняются необходимые работы и
-                      подготавливается к погрузке. После этого организуется
-                      перевозка до порта/склада отправки.
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="agreement" id="benefits">
-      <div class="container">
-        <h2 class="visually-hidden">Гарантии и преимущества</h2>
-        <article class="agreement__guarantees guarantees">
-          <h3 class="agreement__title guarantees__title medium-title">
-            Наши гарантии
-          </h3>
-          <ul class="agreement__grid guarantees__grid">
-            <li class="agreement__item guarantees__item guarantees__item--refund">
-              100% возврат предоплаты
+        <a href="./index.html" class="logo">
+          <img
+            src="./icons/logo.svg"
+            alt="carmark"
+            class="logo__icon"
+            width="60"
+            height="60"
+          />
+        </a>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#about" class="header__menu-link">О нас</a>
             </li>
-            <li class="agreement__item guarantees__item guarantees__item--contract">
-              Работаем по договору
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Услуги</a>
             </li>
-            <li class="agreement__item guarantees__item guarantees__item--contract-transparent">
-              Договор без мелкого шрифта
+            <li class="header__menu-item">
+              <a href="#how-to-buy" class="header__menu-link">Как купить</a>
             </li>
-            <li class="agreement__item guarantees__item guarantees__item--payment">
-              Оплата в кассу нашего автосалона или на р/с компании
+            <li class="header__menu-item">
+              <a href="#benefits" class="header__menu-link">Преимущества</a>
             </li>
-            <li class="agreement__item guarantees__item guarantees__item--car-quality">
-              Качество автомобиля
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Отзывы</a>
             </li>
-            <li class="agreement__item guarantees__item guarantees__item--insurance">
-              На всех этапах сделки - автомобили застрахованы
+            <li class="header__menu-item">
+              <a href="#contacts" class="header__menu-link">Контакты</a>
             </li>
           </ul>
-          <div class="agreement__text-wrapper">
-            <p class="guarantees__description">
-              Вы можете убедиться в прозрачности сделки скачав предварительный
-              договор
+        </nav>
+        <div class="header__contacts">
+          <ul class="header__contacts-list">
+            <li class="header__contacts-item">
+              <a
+                href="#!"
+                class="header__social-icon social-icon social-icon--telegram"
+              ></a>
+            </li>
+            <li class="header__contacts-item">
+              <a
+                href="#!"
+                class="header__social-icon social-icon social-icon--whatsapp"
+              ></a>
+            </li>
+            <li class="header__contacts-item">
+              <a
+                href="#!"
+                class="header__social-icon social-icon social-icon--youtube"
+              ></a>
+            </li>
+          </ul>
+          <button
+            class="header__burger burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <ul class="header__contacts-numbers">
+            <li class="header__contacts-number">
+              <a class="header__contacts-number-link" href="tel:+78352675252">
+                +7 (8352) 67-52-52
+              </a>
+            </li>
+            <li class="header__contacts-number">
+              <a class="header__contacts-number-link" href="tel:+7279971242">
+                +7 (927) 997-12-42
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__text-wrapper">
+            <h1 class="hero__title">Купите автомобиль дешевле на 60%*</h1>
+            <p class="hero__description">
+              Привезем автомобиль под ключ со всеми документами. Подбор
+              автомобиля под любой запрос БЕСПЛАТНО
             </p>
-            <button type="button" class="download-agreement">
-              Скачать пример договора
-            </button>
+            <button class="hero__button button">Оставить заявку</button>
           </div>
-        </article>
-        <article class="agreement__benefits benefits">
-          <h3 class="agreement__title benefits__title medium-title">
-            Преимущества авто из США
-          </h3>
-          <ul class="agreement__grid benefits__grid">
-            <li class="agreement__item benefits__item">
-              <h4 class="benefits__item-title">Высокое качество</h4>
-              <p class="benefits__item-description">
-                Одним из главных аргументов в пользу выбора автомобиля из США,
-                является то, что все местные машины обладают высоким качеством
-                сборкии о снащенности. А так же высоким качеством
-                лакокрасочного покрытия.
-              </p>
-            </li>
-            <li class="agreement__item benefits__item">
-              <h4 class="benefits__item-title">Богатая комплектация</h4>
-              <p class="benefits__item-description">
-                Автомобили из США отличаются богатыми комплектациями, а также
-                отменным техническим состоянием всех узлов и агрегатов.
-              </p>
-            </li>
-            <li class="agreement__item benefits__item">
-              <h4 class="benefits__item-title">Низкая цена</h4>
-              <p class="benefits__item-description">
-                Стоимость поддержанного автомобиля из США значительно дешевле
-                автомобиля на российском рынке даже с учетом расходов на
-                растаможивание и доставку.
-              </p>
-            </li>
-            <li class="agreement__item benefits__item">
-              <h4 class="benefits__item-title">Отличное состояние</h4>
-              <p class="benefits__item-description">
-                Состояние подержанных автомобилей идеальное. В США отличные
-                условия эксплуатации транспорта, хорошие дороги и отменный
-                сервис.
-              </p>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-    <section class="achievement">
-      <div class="container">
-        <header class="achievement__header">
-          <div class="achievement__header-content">
-            <h2 class="achievement__title medium-title">
-              Более 200 автомобилей привезено за 2022
+          <div class="hero__image">
+            <img
+              src="./images/hero/car.webp"
+              alt="Автомобиль"
+              width="818"
+              height="409"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="solutions">
+        <div class="container">
+          <div class="solutions__text-wrapper">
+            <h2 class="solutions__title medium-title">
+              Поможем вам выгодно купить и привезти автомобиль в любую точку
+              России
             </h2>
-            <p class="achievement__description">
-              Проверяем всю историю обслуживания, владения
-              и ДТП с помощью платных сервисов, созданных
-              для профессиональных продавцов автомобилей.
+            <p class="solutions__description">
+              Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же
+              бюджет
             </p>
-            <button class="achievement__button button">Оставить заявку</button>
+            <button class="solutions__button button">Оставить заявку</button>
           </div>
-          <p class="achievement__header-highlight">
-            Мы помогли сэкономить клиентам около <b class="achievement__header-highlight--accent">240 000 000 ₽</b>
-          </p>
-        </header>
-        <div class="achievement__carousel carousel">
-          <button class="carousel__button carousel__button--prev" data-js-prev-button>
-            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6211 1.06055L2.12109 10.5605L11.6211 20.0605" stroke="white" stroke-width="3" />
-            </svg>
-
-          </button>
-          <button class="carousel__button carousel__button--next" data-js-next-button>
-            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.06055 20.0605L10.5605 10.5605L1.06055 1.06055" stroke="white" stroke-width="3" />
-            </svg>
-
-          </button>
-          <ul class="achievement__carousel-track carousel__track" data-js-track>
-            <li class="carousel__slide carousel__slide-clone carousel__slide-clone--first">
-              <img src="./images/achievement/3.webp" alt="" class="carousel__slide-image" width="300" height="200">
+          <ul class="solutions__cards">
+            <li class="solutions__card solutions__card--key">
+              <h3 class="solutions__card-title">С пробегом</h3>
+              <p class="solutions__card-description">
+                Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+                Авито и Авто.ру
+              </p>
             </li>
-            <li class="carousel__slide">
-              <img src="./images/achievement/1.webp" alt="Автомобиль 1" class="carousel__slide-image" width="300"
-                height="200">
+            <li class="solutions__card">
+              <h3 class="solutions__card-title solutions__card--car">Новые</h3>
+              <p class="solutions__card-description">
+                Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
+                ценына Авито и Авто.ру
+              </p>
             </li>
-            <li class="carousel__slide">
-              <img src="./images/achievement/2.webp" alt="Автомобиль 2" class="carousel__slide-image" width="300"
-                height="200">
-            </li>
-            <li class="carousel__slide">
-              <img src="./images/achievement/3.webp" alt="Автомобиль 3" class="carousel__slide-image" width="300"
-                height="200">
-            </li>
-            <li class="carousel__slide carousel__slide-clone carousel__slide-clone--last">
-              <img src="./images/achievement/1.webp" alt="" class="carousel__slide-image" width="300" height="200">
+            <li class="solutions__card solutions__card--coins">
+              <h3 class="solutions__card-title">Под ваш бюджет</h3>
+              <p class="solutions__card-description">
+                Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
+                ценына Авито и Авто.ру
+              </p>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container">
-        <header class="team__header">
-          <h2 class="team__title medium-title">Наша команда</h2>
-          <p class="team__description">
-            Опытные менеджеры поддерживают наших клиентов
+      </section>
+      <section class="about-us" id="about">
+        <div class="about-us__image">
+          <img
+            src="./images/about-us/about-us.webp"
+            alt="Команда автосалона за работой"
+            width="908"
+            height="655"
+          />
+        </div>
+        <div class="container">
+          <h2 class="about-us__title medium-title">О нас</h2>
+          <p class="about-us__description">
+            Мы автосалон и официальный партнер крупнейших мировых
+            авто-аукционов: IAA (Insurance Auto Auction), Copart, Manheim.
           </p>
-        </header>
-        <ul class="team__cards">
-          <li class="team__card">
-            <figure class="team__card-figure">
-              <img src="./images/team/1.webp" alt="" class="team__card-image" width="441" height="496" />
-              <figcaption class="team__card-caption">
-                <p class="team__card-title">Михаил Погосян</p>
-                <span class="team__card-subtitle">Руководитель отдела</span>
-                <address class="team__card-contacts">
-                  <a href="tel:+79276665297" class="team__card-contacts-number">+7 (927) 666-52-97</a>
-                  <ul class="team__card-contacts-list">
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--telegram"></a>
-                    </li>
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--whatsapp"></a>
-                    </li>
-                  </ul>
-                </address>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="team__card">
-            <figure class="team__card-figure">
-              <img src="./images/team/2.webp" alt="" class="team__card-image" width="441" height="496" />
-              <figcaption class="team__card-caption">
-                <p class="team__card-title">Тимур Павлов</p>
-                <span class="team__card-subtitle">Руководитель отдела</span>
-                <address class="team__card-contacts">
-                  <a href="tel:+79276665297" class="team__card-contacts-number">+7 (927) 666-52-97</a>
-                  <ul class="team__card-contacts-list">
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--telegram"></a>
-                    </li>
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--whatsapp"></a>
-                    </li>
-                  </ul>
-                </address>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="team__card">
-            <figure class="team__card-figure">
-              <img src="./images/team/3.webp" alt="" class="team__card-image" width="441" height="496" />
-              <figcaption class="team__card-caption">
-                <p class="team__card-title">Арам Ароян</p>
-                <span class="team__card-subtitle">Менеджер</span>
-                <address class="team__card-contacts">
-                  <a href="tel:+79276665297" class="team__card-contacts-number">+7 (927) 666-52-97</a>
-                  <ul class="team__card-contacts-list">
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--telegram"></a>
-                    </li>
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--whatsapp"></a>
-                    </li>
-                  </ul>
-                </address>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="team__card">
-            <figure class="team__card-figure">
-              <img src="./images/team/4.webp" alt="" class="team__card-image" width="441" height="496" />
-              <figcaption class="team__card-caption">
-                <p class="team__card-title">Денис Николаев</p>
-                <span class="team__card-subtitle">Менеджер</span>
-                <address class="team__card-contacts">
-                  <a href="tel:+79276665297" class="team__card-contacts-number">+7 (927) 666-52-97</a>
-                  <ul class="team__card-contacts-list">
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--telegram"></a>
-                    </li>
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--whatsapp"></a>
-                    </li>
-                  </ul>
-                </address>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="team__card">
-            <figure class="team__card-figure">
-              <img src="./images/team/5.webp" alt="" class="team__card-image" width="441" height="496" />
-              <figcaption class="team__card-caption">
-                <p class="team__card-title">Алексей Кузнецов</p>
-                <span class="team__card-subtitle">Менеджер</span>
-                <address class="team__card-contacts">
-                  <a href="tel:+79276665297" class="team__card-contacts-number">+7 (927) 666-52-97</a>
-                  <ul class="team__card-contacts-list">
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--telegram"></a>
-                    </li>
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--whatsapp"></a>
-                    </li>
-                  </ul>
-                </address>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="team__card">
-            <figure class="team__card-figure">
-              <img src="./images/team/6.webp" alt="" class="team__card-image" width="441" height="496" />
-              <figcaption class="team__card-caption">
-                <p class="team__card-title">Андрей Шахназарян</p>
-                <span class="team__card-subtitle">Менеджер</span>
-                <address class="team__card-contacts">
-                  <a href="tel:+79276665297" class="team__card-contacts-number">+7 (927) 666-52-97</a>
-                  <ul class="team__card-contacts-list">
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--telegram"></a>
-                    </li>
-                    <li class="team__card-contacts-item">
-                      <a href="#!" class="team__card-contacts-icon social-icon social-icon--whatsapp"></a>
-                    </li>
-                  </ul>
-                </address>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="faq">
-      <div class="container">
-        <h2 class="faq__title medium-title">Часто задаваемые вопросы</h2>
-        <ul class="faq__list">
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Какие способы оплаты у вас?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  Мы принимаем оплату как наличными в кассу нашего автосалона,
-                  так и на расчетный счет компании. Также возможна оплата
-                  через банковскую карту.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Какие автомобили вы доставляете?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  Мы доставляем автомобили различных марок и моделей, как
-                  новые, так и с пробегом. Вы можете выбрать автомобиль по
-                  своим предпочтениям и бюджету.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Могу ли я купить через вас запчасти?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  Да, при покупке автомобиля с повреждениями, мы подберем для
-                  него запчасти.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Какие гарантии, что во время доставки с автомобилем ничего
-                  не произойдет?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  Все автомобили, которые мы доставляем, застрахованы на всех
-                  этапах транспортировки. В случае возникновения любых
-                  непредвиденных ситуаций, вы будете полностью защищены нашей
-                  страховой программой.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Какие документы я получу в комплекте с автомобилем?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  При покупке автомобиля через наш автосалон, вы получите
-                  полный комплект документов, включая ПТС, СТС, договор купли
-                  продажи, а также все необходимые таможенные и
-                  регистрационные документы.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  В какие города России вы осуществляете доставку автомобиля?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  Мы осуществляем доставку автомобилей в любой город России,
-                  включая Москву, Санкт-Петербург, Екатеринбург, Новосибирск,
-                  Казань и другие крупные города. Также возможна доставка в
-                  отдаленные регионы по согласованию.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Какие сроки доставки автомобиля?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  Сроки доставки автомобиля зависят от его местоположения и
-                  выбранного способа транспортировки. В среднем, доставка
-                  занимает от 2 до 6 недель.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Можно ли вернуть автомобиль на аукцион после покупки?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  Нет, после покупки автомобиля на аукционе, возврат не
-                  предусмотрен. Все автомобили продаются "как есть", и мы
-                  рекомендуем тщательно проверять автомобиль перед покупкой.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Какие сроки оплаты после выигрыша на аукционе?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  После успешной ставки на аукционе, у вас есть 2 рабочих дня
-                  для внесения полной оплаты за автомобиль. В противном
-                  случае, ваш депозит будет утерян, и автомобиль будет
-                  выставлен на повторный аукцион.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="accordion faq__accordion">
-            <details class="accordion__details" name="faq">
-              <summary class="accordion__summary faq__accordion-summary">
-                <span class="accordion__title">
-                  Что если я откажусь от покупки автомобиля?
-                </span>
-                <div class="accordion__button faq__accordion-button">
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                  <span class="accordion__button-line faq__accordion-button-line"></span>
-                </div>
-              </summary>
-            </details>
-            <div class="accordion__content">
-              <div class="accordion__content-body">
-                <p class="accordion__content-text">
-                  В случае отказа от покупки автомобиля по любой причине, мы
-                  вернем вам 100% предоплаты в полном объеме, без каких-либо
-                  удержаний и штрафов.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer class="footer" id="contacts">
-    <div class="container">
-      <h2 class="footer__title medium-title">Наши контакты</h2>
-      <dl class="footer__contacts">
-        <div class="footer__contact">
-          <dt class="footer__contact-name">Адрес:</dt>
-          <dd class="footer__contact-value">
-            428000, г. Чебоксары, Марпосадское шоссе, 14.
-          </dd>
+          <ul class="about-us__list">
+            <li class="about-us__item about-us__item--car">
+              Работаем без посредников
+            </li>
+            <li class="about-us__item about-us__item--reward">
+              Успешный опыт 10 лет
+            </li>
+            <li class="about-us__item about-us__item--delivery">
+              Отлаженная логистика
+            </li>
+          </ul>
+          <p class="about-us__highlight">
+            Мы берем на себя полное сопровождение сделки до передачи автомобиля
+            в руки клиенту.
+          </p>
+          <button class="about-us__button button">Оставить заявку</button>
         </div>
-        <div class="footer__contact">
-          <dt class="footer__contact-name">Время работы:</dt>
-          <dd class="footer__contact-value">Ежедневно 10:00 до 19:00</dd>
+      </section>
+      <section class="process" id="how-to-buy">
+        <div class="container">
+          <h2 class="process__title medium-title">Процесс покупки</h2>
+          <ul class="process__steps">
+            <li class="process__step accordion">
+              <details
+                class="process__step-details accordion__details"
+                name="step"
+              >
+                <summary class="process__step-summary accordion__summary">
+                  <div class="accordion__title process__step-title">
+                    <span class="process__step-title-number">01</span>
+                    <span class="process__step-title-text">
+                      Подбор автомобиля
+                    </span>
+                  </div>
+                  <div class="process__step-button accordion__button">
+                    <span
+                      class="process__step-button-line accordion__button-line"
+                    ></span>
+                    <span
+                      class="process__step-button-line accordion__button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="process__step-content accordion__content">
+                <div class="process__step-content-body accordion__content-body">
+                  <dl class="process__step-content-list">
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">Консультация</dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Индивидуальный подход и консультация от опытных
+                        специалистов по всем вопросам, связанным с выбором,
+                        доставкой и стоимостью автомобиля и другими расходами.
+                      </dd>
+                    </div>
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Предварительный договор
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Подписывается предварительный договор, на подбор
+                        автомобиля согласно вашим требованиям, на условиях:
+                        Депозитный платеж 1000$
+                        <button
+                          type="button"
+                          class="process__step-content-button download-agreement"
+                        >
+                          Скачать пример договора
+                        </button>
+                      </dd>
+                    </div>
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Подбор автомобиля
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Ваш персональный менеджер ведете поиск автомобиля, на
+                        площадках наших партнеров IAAI и Copart. Период поиска
+                        автомобиля в среднем занимает 2 недели
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="process__step accordion">
+              <details
+                class="process__step-details accordion__details"
+                name="step"
+              >
+                <summary class="process__step-summary accordion__summary">
+                  <div class="accordion__title process__step-title">
+                    <span class="process__step-title-number">02</span>
+                    <span class="process__step-title-text"> Покупка </span>
+                  </div>
+                  <div class="process__step-button accordion__button">
+                    <span
+                      class="process__step-button-line accordion__button-line"
+                    ></span>
+                    <span
+                      class="process__step-button-line accordion__button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="process__step-content accordion__content">
+                <div class="process__step-content-body accordion__content-body">
+                  <dl class="process__step-content-list">
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Аукцион и ставка
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Менеджер участвует в торгах на аукционе от вашего имени.
+                        При победе фиксируется ставка и вносится депозит; мы
+                        сопровождаем все взаимодействия с площадкой и
+                        подтверждаем победу.
+                      </dd>
+                    </div>
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Оплата и оформление
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Вносится полная оплата по договору, оформляются счета и
+                        сопроводительные документы. Мы помогаем с подготовкой
+                        пакета документов для таможни и вывоза.
+                      </dd>
+                    </div>
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Подготовка к отправке
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Автомобиль проходит финальную проверку, фиксируется
+                        состояние, выполняются необходимые работы и
+                        подготавливается к погрузке. После этого организуется
+                        перевозка до порта/склада отправки.
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="process__step accordion">
+              <details
+                class="process__step-details accordion__details"
+                name="step"
+              >
+                <summary class="process__step-summary accordion__summary">
+                  <div class="accordion__title process__step-title">
+                    <span class="process__step-title-number">03</span>
+                    <span class="process__step-title-text">
+                      Доставка в ваш город
+                    </span>
+                  </div>
+                  <div class="process__step-button accordion__button">
+                    <span
+                      class="process__step-button-line accordion__button-line"
+                    ></span>
+                    <span
+                      class="process__step-button-line accordion__button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="process__step-content accordion__content">
+                <div class="process__step-content-body accordion__content-body">
+                  <dl class="process__step-content-list">
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Аукцион и ставка
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Менеджер участвует в торгах на аукционе от вашего имени.
+                        При победе фиксируется ставка и вносится депозит; мы
+                        сопровождаем все взаимодействия с площадкой и
+                        подтверждаем победу.
+                      </dd>
+                    </div>
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Оплата и оформление
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Вносится полная оплата по договору, оформляются счета и
+                        сопроводительные документы. Мы помогаем с подготовкой
+                        пакета документов для таможни и вывоза.
+                      </dd>
+                    </div>
+                    <div class="process__step-content-item">
+                      <dt class="process__step-content-name">
+                        Подготовка к отправке
+                      </dt>
+                      <dd
+                        class="process__step-content-value accordion__content-text"
+                      >
+                        Автомобиль проходит финальную проверку, фиксируется
+                        состояние, выполняются необходимые работы и
+                        подготавливается к погрузке. После этого организуется
+                        перевозка до порта/склада отправки.
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="footer__contact">
-          <dt class="footer__contact-name">Телефон:</dt>
-          <dd class="footer__contact-value">
-            <ul class="footer__contact-value-numbers">
-              <li class="footer__contact-value-number">8 927 997 12 42</li>
-              <li class="footer__contact-value-number">8 927 997 12 42</li>
-            </ul>
-          </dd>
-        </div>
-        <div class="footer__contact">
-          <dt class="footer__contact-name">E-mail:</dt>
-          <dd class="footer__contact-value">
-            <a href="mailto:carmark21@auto.ru">carmark21@auto.ru</a>
-          </dd>
-        </div>
-        <div class="footer__contact">
-          <dt class="footer__contact-name">Соц. сети:</dt>
-          <dd class="footer__contact-value">
-            <ul class="footer__contact-value-socials">
-              <li class="footer__contact-value-social">
-                <a href="#!"
-                  class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--telegram"></a>
+      </section>
+      <section class="agreement" id="benefits">
+        <div class="container">
+          <h2 class="visually-hidden">Гарантии и преимущества</h2>
+          <article class="agreement__guarantees guarantees">
+            <h3 class="agreement__title guarantees__title medium-title">
+              Наши гарантии
+            </h3>
+            <ul class="agreement__grid guarantees__grid">
+              <li
+                class="agreement__item guarantees__item guarantees__item--refund"
+              >
+                100% возврат предоплаты
               </li>
-              <li class="footer__contact-value-social">
-                <a href="#!"
-                  class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--whatsapp"></a>
+              <li
+                class="agreement__item guarantees__item guarantees__item--contract"
+              >
+                Работаем по договору
               </li>
-              <li class="footer__contact-value-social">
-                <a href="#!"
-                  class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--youtube"></a>
+              <li
+                class="agreement__item guarantees__item guarantees__item--contract-transparent"
+              >
+                Договор без мелкого шрифта
+              </li>
+              <li
+                class="agreement__item guarantees__item guarantees__item--payment"
+              >
+                Оплата в кассу нашего автосалона или на р/с компании
+              </li>
+              <li
+                class="agreement__item guarantees__item guarantees__item--car-quality"
+              >
+                Качество автомобиля
+              </li>
+              <li
+                class="agreement__item guarantees__item guarantees__item--insurance"
+              >
+                На всех этапах сделки - автомобили застрахованы
               </li>
             </ul>
-          </dd>
+            <div class="agreement__text-wrapper">
+              <p class="guarantees__description">
+                Вы можете убедиться в прозрачности сделки скачав предварительный
+                договор
+              </p>
+              <button type="button" class="download-agreement">
+                Скачать пример договора
+              </button>
+            </div>
+          </article>
+          <article class="agreement__benefits benefits">
+            <h3 class="agreement__title benefits__title medium-title">
+              Преимущества авто из США
+            </h3>
+            <ul class="agreement__grid benefits__grid">
+              <li class="agreement__item benefits__item">
+                <h4 class="benefits__item-title">Высокое качество</h4>
+                <p class="benefits__item-description">
+                  Одним из главных аргументов в пользу выбора автомобиля из США,
+                  является то, что все местные машины обладают высоким качеством
+                  сборкии о снащенности. А так же высоким качеством
+                  лакокрасочного покрытия.
+                </p>
+              </li>
+              <li class="agreement__item benefits__item">
+                <h4 class="benefits__item-title">Богатая комплектация</h4>
+                <p class="benefits__item-description">
+                  Автомобили из США отличаются богатыми комплектациями, а также
+                  отменным техническим состоянием всех узлов и агрегатов.
+                </p>
+              </li>
+              <li class="agreement__item benefits__item">
+                <h4 class="benefits__item-title">Низкая цена</h4>
+                <p class="benefits__item-description">
+                  Стоимость поддержанного автомобиля из США значительно дешевле
+                  автомобиля на российском рынке даже с учетом расходов на
+                  растаможивание и доставку.
+                </p>
+              </li>
+              <li class="agreement__item benefits__item">
+                <h4 class="benefits__item-title">Отличное состояние</h4>
+                <p class="benefits__item-description">
+                  Состояние подержанных автомобилей идеальное. В США отличные
+                  условия эксплуатации транспорта, хорошие дороги и отменный
+                  сервис.
+                </p>
+              </li>
+            </ul>
+          </article>
         </div>
-      </dl>
-      <div style="position: relative; overflow: hidden">
-        <a href="https://yandex.ru/maps/45/cheboksary/?utm_medium=mapframe&utm_source=maps"
-          style="color: #eee; font-size: 12px; position: absolute; top: 0px">Чебоксары</a><a
-          href="https://yandex.ru/maps/45/cheboksary/house/marposadskoye_shosse_14/YE4YdQVjSUwBQFtsfX1zd3RrYQ==/?ll=47.323179%2C56.126864&utm_medium=mapframe&utm_source=maps&z=19.93"
-          style="color: #eee; font-size: 12px; position: absolute; top: 14px">Марпосадское шоссе, 14 —
-          Яндекс Карты</a><iframe
-          src="https://yandex.ru/map-widget/v1/?ll=47.323179%2C56.126864&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzE4ODQ5MTUShQHQoNC-0YHRgdC40Y8sINCn0YPQstCw0YjRgdC60LDRjyDQoNC10YHQv9GD0LHQu9C40LrQsCDigJQg0KfRg9Cy0LDRiNC40Y8sINCn0LXQsdC-0LrRgdCw0YDRiywg0JzQsNGA0L_QvtGB0LDQtNGB0LrQvtC1INGI0L7RgdGB0LUsIDE0IgoN2Uo9QhXugWBC&z=19.93"
-          width="1280" height="320" class="footer__map"></iframe>
-      </div>
-      <ul class="footer__copyright">
-        <li class="footer__copyright-item">
-          <a href="#!" class="footer__copyright-link">Реквизиты</a>
-        </li>
-        <li class="footer__copyright-item">
-          <a href="#!" class="footer__copyright-link">Политика конфиденциальности
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-</body>
+      </section>
+      <section class="achievement">
+        <div class="container">
+          <header class="achievement__header">
+            <div class="achievement__header-content">
+              <h2 class="achievement__title medium-title">
+                Более 200 автомобилей привезено за 2022
+              </h2>
+              <p class="achievement__description">
+                Проверяем всю историю обслуживания, владения и ДТП с помощью
+                платных сервисов, созданных для профессиональных продавцов
+                автомобилей.
+              </p>
+              <button class="achievement__button button">
+                Оставить заявку
+              </button>
+            </div>
+            <p class="achievement__header-highlight">
+              Мы помогли сэкономить клиентам около
+              <b class="achievement__header-highlight--accent">240 000 000 ₽</b>
+            </p>
+          </header>
+          <div class="achievement__carousel carousel">
+            <button
+              class="carousel__button carousel__button--prev"
+              data-js-prev-button
+            >
+              <svg
+                width="13"
+                height="22"
+                viewBox="0 0 13 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6211 1.06055L2.12109 10.5605L11.6211 20.0605"
+                  stroke="white"
+                  stroke-width="3"
+                />
+              </svg>
+            </button>
+            <button
+              class="carousel__button carousel__button--next"
+              data-js-next-button
+            >
+              <svg
+                width="13"
+                height="22"
+                viewBox="0 0 13 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.06055 20.0605L10.5605 10.5605L1.06055 1.06055"
+                  stroke="white"
+                  stroke-width="3"
+                />
+              </svg>
+            </button>
+            <ul
+              class="achievement__carousel-track carousel__track"
+              data-js-track
+            >
+              <li
+                class="carousel__slide carousel__slide-clone carousel__slide-clone--first"
+              >
+                <img
+                  src="./images/achievement/3.webp"
+                  alt=""
+                  class="carousel__slide-image"
+                  width="300"
+                  height="200"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="./images/achievement/1.webp"
+                  alt="Автомобиль 1"
+                  class="carousel__slide-image"
+                  width="300"
+                  height="200"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="./images/achievement/2.webp"
+                  alt="Автомобиль 2"
+                  class="carousel__slide-image"
+                  width="300"
+                  height="200"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="./images/achievement/3.webp"
+                  alt="Автомобиль 3"
+                  class="carousel__slide-image"
+                  width="300"
+                  height="200"
+                />
+              </li>
+              <li
+                class="carousel__slide carousel__slide-clone carousel__slide-clone--last"
+              >
+                <img
+                  src="./images/achievement/1.webp"
+                  alt=""
+                  class="carousel__slide-image"
+                  width="300"
+                  height="200"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <header class="team__header">
+            <h2 class="team__title medium-title">Наша команда</h2>
+            <p class="team__description">
+              Опытные менеджеры поддерживают наших клиентов
+            </p>
+          </header>
+          <ul class="team__cards">
+            <li class="team__card">
+              <figure class="team__card-figure">
+                <img
+                  src="./images/team/1.webp"
+                  alt=""
+                  class="team__card-image"
+                  width="441"
+                  height="496"
+                />
+                <figcaption class="team__card-caption">
+                  <p class="team__card-title">Михаил Погосян</p>
+                  <span class="team__card-subtitle">Руководитель отдела</span>
+                  <address class="team__card-contacts">
+                    <a
+                      href="tel:+79276665297"
+                      class="team__card-contacts-number"
+                      >+7 (927) 666-52-97</a
+                    >
+                    <ul class="team__card-contacts-list">
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--telegram"
+                        ></a>
+                      </li>
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--whatsapp"
+                        ></a>
+                      </li>
+                    </ul>
+                  </address>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team__card">
+              <figure class="team__card-figure">
+                <img
+                  src="./images/team/2.webp"
+                  alt=""
+                  class="team__card-image"
+                  width="441"
+                  height="496"
+                />
+                <figcaption class="team__card-caption">
+                  <p class="team__card-title">Тимур Павлов</p>
+                  <span class="team__card-subtitle">Руководитель отдела</span>
+                  <address class="team__card-contacts">
+                    <a
+                      href="tel:+79276665297"
+                      class="team__card-contacts-number"
+                      >+7 (927) 666-52-97</a
+                    >
+                    <ul class="team__card-contacts-list">
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--telegram"
+                        ></a>
+                      </li>
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--whatsapp"
+                        ></a>
+                      </li>
+                    </ul>
+                  </address>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team__card">
+              <figure class="team__card-figure">
+                <img
+                  src="./images/team/3.webp"
+                  alt=""
+                  class="team__card-image"
+                  width="441"
+                  height="496"
+                />
+                <figcaption class="team__card-caption">
+                  <p class="team__card-title">Арам Ароян</p>
+                  <span class="team__card-subtitle">Менеджер</span>
+                  <address class="team__card-contacts">
+                    <a
+                      href="tel:+79276665297"
+                      class="team__card-contacts-number"
+                      >+7 (927) 666-52-97</a
+                    >
+                    <ul class="team__card-contacts-list">
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--telegram"
+                        ></a>
+                      </li>
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--whatsapp"
+                        ></a>
+                      </li>
+                    </ul>
+                  </address>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team__card">
+              <figure class="team__card-figure">
+                <img
+                  src="./images/team/4.webp"
+                  alt=""
+                  class="team__card-image"
+                  width="441"
+                  height="496"
+                />
+                <figcaption class="team__card-caption">
+                  <p class="team__card-title">Денис Николаев</p>
+                  <span class="team__card-subtitle">Менеджер</span>
+                  <address class="team__card-contacts">
+                    <a
+                      href="tel:+79276665297"
+                      class="team__card-contacts-number"
+                      >+7 (927) 666-52-97</a
+                    >
+                    <ul class="team__card-contacts-list">
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--telegram"
+                        ></a>
+                      </li>
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--whatsapp"
+                        ></a>
+                      </li>
+                    </ul>
+                  </address>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team__card">
+              <figure class="team__card-figure">
+                <img
+                  src="./images/team/5.webp"
+                  alt=""
+                  class="team__card-image"
+                  width="441"
+                  height="496"
+                />
+                <figcaption class="team__card-caption">
+                  <p class="team__card-title">Алексей Кузнецов</p>
+                  <span class="team__card-subtitle">Менеджер</span>
+                  <address class="team__card-contacts">
+                    <a
+                      href="tel:+79276665297"
+                      class="team__card-contacts-number"
+                      >+7 (927) 666-52-97</a
+                    >
+                    <ul class="team__card-contacts-list">
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--telegram"
+                        ></a>
+                      </li>
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--whatsapp"
+                        ></a>
+                      </li>
+                    </ul>
+                  </address>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team__card">
+              <figure class="team__card-figure">
+                <img
+                  src="./images/team/6.webp"
+                  alt=""
+                  class="team__card-image"
+                  width="441"
+                  height="496"
+                />
+                <figcaption class="team__card-caption">
+                  <p class="team__card-title">Андрей Шахназарян</p>
+                  <span class="team__card-subtitle">Менеджер</span>
+                  <address class="team__card-contacts">
+                    <a
+                      href="tel:+79276665297"
+                      class="team__card-contacts-number"
+                      >+7 (927) 666-52-97</a
+                    >
+                    <ul class="team__card-contacts-list">
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--telegram"
+                        ></a>
+                      </li>
+                      <li class="team__card-contacts-item">
+                        <a
+                          href="#!"
+                          class="team__card-contacts-icon social-icon social-icon--whatsapp"
+                        ></a>
+                      </li>
+                    </ul>
+                  </address>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title medium-title">Часто задаваемые вопросы</h2>
+          <ul class="faq__list">
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Какие способы оплаты у вас?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    Мы принимаем оплату как наличными в кассу нашего автосалона,
+                    так и на расчетный счет компании. Также возможна оплата
+                    через банковскую карту.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Какие автомобили вы доставляете?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    Мы доставляем автомобили различных марок и моделей, как
+                    новые, так и с пробегом. Вы можете выбрать автомобиль по
+                    своим предпочтениям и бюджету.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Могу ли я купить через вас запчасти?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    Да, при покупке автомобиля с повреждениями, мы подберем для
+                    него запчасти.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Какие гарантии, что во время доставки с автомобилем ничего
+                    не произойдет?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    Все автомобили, которые мы доставляем, застрахованы на всех
+                    этапах транспортировки. В случае возникновения любых
+                    непредвиденных ситуаций, вы будете полностью защищены нашей
+                    страховой программой.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Какие документы я получу в комплекте с автомобилем?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    При покупке автомобиля через наш автосалон, вы получите
+                    полный комплект документов, включая ПТС, СТС, договор купли
+                    продажи, а также все необходимые таможенные и
+                    регистрационные документы.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    В какие города России вы осуществляете доставку автомобиля?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    Мы осуществляем доставку автомобилей в любой город России,
+                    включая Москву, Санкт-Петербург, Екатеринбург, Новосибирск,
+                    Казань и другие крупные города. Также возможна доставка в
+                    отдаленные регионы по согласованию.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Какие сроки доставки автомобиля?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    Сроки доставки автомобиля зависят от его местоположения и
+                    выбранного способа транспортировки. В среднем, доставка
+                    занимает от 2 до 6 недель.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Можно ли вернуть автомобиль на аукцион после покупки?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    Нет, после покупки автомобиля на аукционе, возврат не
+                    предусмотрен. Все автомобили продаются "как есть", и мы
+                    рекомендуем тщательно проверять автомобиль перед покупкой.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Какие сроки оплаты после выигрыша на аукционе?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    После успешной ставки на аукционе, у вас есть 2 рабочих дня
+                    для внесения полной оплаты за автомобиль. В противном
+                    случае, ваш депозит будет утерян, и автомобиль будет
+                    выставлен на повторный аукцион.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion faq__accordion">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary faq__accordion-summary">
+                  <span class="accordion__title">
+                    Что если я откажусь от покупки автомобиля?
+                  </span>
+                  <div class="accordion__button faq__accordion-button">
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                    <span
+                      class="accordion__button-line faq__accordion-button-line"
+                    ></span>
+                  </div>
+                </summary>
+              </details>
+              <div class="accordion__content">
+                <div class="accordion__content-body">
+                  <p class="accordion__content-text">
+                    В случае отказа от покупки автомобиля по любой причине, мы
+                    вернем вам 100% предоплаты в полном объеме, без каких-либо
+                    удержаний и штрафов.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="consult">
+        <div class="container">
+            <div class="consult__form consult__wrapper">
+              <h3 class="consult__title">Только телефон, и мы в деле</h3>
+              <p class="consult__description">
+                Специалист перезвонит Вам в течение 5 минут, в рабочее время для
+                уточнения деталей
+              </p>
 
+              <form class="consult__form-body">
+                <input
+                  type="tel"
+                  class="consult__input"
+                  placeholder="+7 (__) ___-__-__"
+                  required
+                />
+                <button class="consult__button button">Получить консультацию</button>
+
+                <label class="consult__agree">
+                  <input type="checkbox" checked class="consult__agree-checkbox"/>
+                  <span>
+                    Нажимая на кнопку вы соглашаетесь с условиями
+                    <a href="#" class="consult__agree-link">Политики конфиденциальности</a>
+                  </span>
+                </label>
+              </form>
+              <div class="consult__messengers">
+                <p class="consult__messengers-title">
+                  Связаться с нами через мессенджер
+                </p>
+                <div class="consult__messengers-list">
+                  <a
+                    href="#"
+                    class="consult__messenger consult__messenger--whatsapp"
+                  >
+                    WhatsApp
+                  </a>
+                  <a
+                    href="#"
+                    class="consult__messenger consult__messenger--telegram"
+                  >
+                    Telegram
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult__info consult__wrapper">
+              <h2 class="consult__info-title">
+                Точный расчет стоимости<br />уже через 1 час
+              </h2>
+              <ul class="consult__list">
+                <li class="consult__item">
+                  Расскажем какие автомобили вы можете купить с наибольшей
+                  выгодой.
+                </li>
+                <li class="consult__item">
+                  Отправим подобранные автомобили на ваш WhatsApp или Telegram
+                </li>
+                <li class="consult__item">
+                  Сделаем точный расчет стоимости автомобиля с доставкой в ваш
+                  город «под ключ»
+                </li>
+              </ul>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <h2 class="footer__title medium-title">Наши контакты</h2>
+        <dl class="footer__contacts">
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Адрес:</dt>
+            <dd class="footer__contact-value">
+              428000, г. Чебоксары, Марпосадское шоссе, 14.
+            </dd>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Время работы:</dt>
+            <dd class="footer__contact-value">Ежедневно 10:00 до 19:00</dd>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Телефон:</dt>
+            <dd class="footer__contact-value">
+              <ul class="footer__contact-value-numbers">
+                <li class="footer__contact-value-number">8 927 997 12 42</li>
+                <li class="footer__contact-value-number">8 927 997 12 42</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">E-mail:</dt>
+            <dd class="footer__contact-value">
+              <a href="mailto:carmark21@auto.ru">carmark21@auto.ru</a>
+            </dd>
+          </div>
+          <div class="footer__contact">
+            <dt class="footer__contact-name">Соц. сети:</dt>
+            <dd class="footer__contact-value">
+              <ul class="footer__contact-value-socials">
+                <li class="footer__contact-value-social">
+                  <a
+                    href="#!"
+                    class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--telegram"
+                  ></a>
+                </li>
+                <li class="footer__contact-value-social">
+                  <a
+                    href="#!"
+                    class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--whatsapp"
+                  ></a>
+                </li>
+                <li class="footer__contact-value-social">
+                  <a
+                    href="#!"
+                    class="footer__contact-value-social-icon social-icon social-icon--colorful social-icon--youtube"
+                  ></a>
+                </li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/45/cheboksary/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Чебоксары</a
+          ><a
+            href="https://yandex.ru/maps/45/cheboksary/house/marposadskoye_shosse_14/YE4YdQVjSUwBQFtsfX1zd3RrYQ==/?ll=47.323179%2C56.126864&utm_medium=mapframe&utm_source=maps&z=19.93"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Марпосадское шоссе, 14 — Яндекс Карты</a
+          ><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=47.323179%2C56.126864&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzE4ODQ5MTUShQHQoNC-0YHRgdC40Y8sINCn0YPQstCw0YjRgdC60LDRjyDQoNC10YHQv9GD0LHQu9C40LrQsCDigJQg0KfRg9Cy0LDRiNC40Y8sINCn0LXQsdC-0LrRgdCw0YDRiywg0JzQsNGA0L_QvtGB0LDQtNGB0LrQvtC1INGI0L7RgdGB0LUsIDE0IgoN2Uo9QhXugWBC&z=19.93"
+            width="1280"
+            height="320"
+            class="footer__map"
+          ></iframe>
+        </div>
+        <ul class="footer__copyright">
+          <li class="footer__copyright-item">
+            <a href="#!" class="footer__copyright-link">Реквизиты</a>
+          </li>
+          <li class="footer__copyright-item">
+            <a href="#!" class="footer__copyright-link"
+              >Политика конфиденциальности
+            </a>
+          </li>
+        </ul>
+      </div>
+    </fo oter>
+  </body>
 </html>

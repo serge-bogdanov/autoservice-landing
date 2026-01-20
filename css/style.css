@@ -438,8 +438,11 @@
   --slides-viewport: 3;
   --slides-gap: 24px;
   display: grid;
-  grid-auto-columns: calc((100% - ((var(--slides-viewport) - 1) * var(--slides-gap)) ) / var(--slides-viewport));
-  column-gap: var(--slides-gap) ;
+  grid-auto-columns: calc(
+    (100% - ((var(--slides-viewport) - 1) * var(--slides-gap))) /
+      var(--slides-viewport)
+  );
+  column-gap: var(--slides-gap);
   grid-auto-flow: column;
   overflow-x: auto;
   scrollbar-width: none;
@@ -450,7 +453,7 @@
 }
 .carousel {
   position: relative;
-  padding-inline:  calc(var(--button-width) / 2);
+  padding-inline: calc(var(--button-width) / 2);
 }
 .carousel__slide {
   scroll-snap-align: start;
@@ -473,7 +476,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   color: var(--color-light);
 }
 .carousel__button--prev {
@@ -589,6 +592,124 @@
 }
 .faq__accordion {
   padding-left: 24px;
+}
+
+/* consult */
+
+.consult {
+  padding-block: 120px 100px;
+  background: url("../images/consult/consult-background.webp") center/cover no-repeat;
+}
+
+.consult .container {
+  display: flex;
+  column-gap: 60px;
+}
+
+
+.consult__wrapper {
+  background-color: var(--color-light);
+  border-radius: 20px;
+  padding: 40px 32px 50px;
+}
+.consult__form {
+  max-width: 460px;
+}
+
+.consult__title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+  line-height: 1.3;
+}
+
+.consult__description {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.consult__form-body {
+  display: grid;
+  gap: 12px;
+}
+
+.consult__input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--color-dark-translucent);
+  transition: border var(--transition-duration);
+}
+
+.consult__button {
+  max-width: none;
+}
+
+.consult__agree {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.consult__agree-checkbox {
+  width: 20px;
+  aspect-ratio: 1;
+  accent-color: var(--color-dark);
+}
+
+.consult__agree-link {
+  color: var(--color-red);
+}
+
+.consult__messengers {
+  margin-top: 20px;
+}
+
+.consult__messengers-title {
+  font-weight: 500;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+  margin-bottom: 15px;
+}
+
+.consult__messengers-list {
+  display: flex;
+  column-gap: 10px;
+}
+
+.consult__messenger {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--color-red);
+  color: var(--color-dark);
+}
+
+.consult__info-title {
+  font-size: clamp(1.75rem, 1.55rem + 1vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.consult__list {
+  display: grid;
+  row-gap: 24px;
+}
+
+.consult__item {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  font-size: var(1rem, 1rem + 0.5vw, 1.25rem);
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.consult__item::before {
+  content: "";
+  width: 36px;
+  aspect-ratio: 1;
+  background: url("../icons/checkmark.svg") center/cover no-repeat;
 }
 
 /* footer */
