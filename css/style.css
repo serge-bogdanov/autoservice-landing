@@ -116,7 +116,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/icons/solutions/key.png");
+  background-image: url("../icons/solutions/key.png");
   z-index: 300;
   width: 94px;
   height: 82px;
@@ -129,7 +129,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/icons/solutions/car.png");
+  background-image: url("../icons/solutions/car.png");
   z-index: 300;
   width: 222px;
   height: 120px;
@@ -142,7 +142,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/icons/solutions/coins.png");
+  background-image: url("../icons/solutions/coins.png");
   z-index: 300;
   width: 222px;
   height: 127px;
