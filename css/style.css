@@ -109,7 +109,45 @@
   padding: 24px 32px;
 
   position: relative;
-  /* для картинки */
+}
+.solutions__card--key::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/icons/solutions/key.png");
+  z-index: 300;
+  width: 94px;
+  height: 82px;
+  bottom: 30px;
+  right: 18px;
+}
+.solutions__card--car::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/icons/solutions/car.png");
+  z-index: 300;
+  width: 222px;
+  height: 120px;
+  bottom: 0px;
+  right: 0px;
+}
+.solutions__card--coins::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/icons/solutions/coins.png");
+  z-index: 300;
+  width: 222px;
+  height: 127px;
+  bottom: 17px;
+  right: 16px;
 }
 
 .solutions__card-title {
@@ -598,14 +636,14 @@
 
 .consult {
   padding-block: 120px 100px;
-  background: url("../images/consult/consult-background.webp") center/cover no-repeat;
+  background: url("../images/consult/consult-background.webp") center/cover
+    no-repeat;
 }
 
 .consult .container {
   display: flex;
   column-gap: 60px;
 }
-
 
 .consult__wrapper {
   background-color: var(--color-light);
