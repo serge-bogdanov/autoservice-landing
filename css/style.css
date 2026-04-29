@@ -242,6 +242,55 @@
   padding: 14px 40px;
 }
 
+/* cars */
+
+
+.cars {
+  padding-block: 100px 120px;
+  background-color: var(--color-light-alt);
+}
+
+.cars .container {
+  
+}
+.cars__title {
+  margin-bottom: 20px;
+}
+.cars__description {
+  margin-bottom: 40px;
+}
+.cars__cards {
+
+}
+.cars__card {
+}
+.cars-card {
+}
+.cars-card__figure {
+}
+.cars-card__image {
+}
+.cars-card__caption {
+}
+.cars-card__title {
+}
+.cars-card__details {
+}
+.cars-card__detail {
+}
+.cars-card__detail-name {
+}
+.cars-card__detail-value {
+}
+.cars-card__prices {
+}
+.cars-card__price-item {
+}
+.cars-card__detail-label {
+}
+.button {
+}
+
 /* process   */
 
 .process {
@@ -393,8 +442,6 @@
   background-image: url("../icons/guarantees/insurance.svg");
 }
 .guarantees__description {
-  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
-  line-height: 1.33;
   max-width: 740px;
 }
 
@@ -451,8 +498,7 @@
 }
 
 .achievement__description {
-  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
-  line-height: 1.33;
+
   opacity: 0.8;
 
   margin-bottom: 32px;
@@ -472,57 +518,7 @@
   font-weight: 700;
   font-size: clamp(1.2rem, 1rem + 1.25vw, 2.25rem);
 }
-.carousel__track {
-  --slides-viewport: 3;
-  --slides-gap: 24px;
-  display: grid;
-  grid-auto-columns: calc(
-    (100% - ((var(--slides-viewport) - 1) * var(--slides-gap))) /
-      var(--slides-viewport)
-  );
-  column-gap: var(--slides-gap);
-  grid-auto-flow: column;
-  overflow-x: auto;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
-}
-.carousel__track::-webkit-scrollbar {
-  display: none;
-}
-.carousel {
-  position: relative;
-  padding-inline: calc(var(--button-width) / 2);
-}
-.carousel__slide {
-  scroll-snap-align: start;
-}
-.carousel__slide-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.carousel__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--color-red);
-  width: var(--button-width);
-  aspect-ratio: 1;
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: var(--color-light);
-}
-.carousel__button--prev {
-  left: 0;
-}
-.carousel__button--next {
-  right: 0;
-}
 
 /* team */
 
@@ -538,10 +534,7 @@
 .team__title {
   margin-bottom: 28px;
 }
-.team__description {
-  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
-  line-height: 1.33;
-}
+
 .team__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));

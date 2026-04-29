@@ -48,6 +48,10 @@
   font-size: clamp(1.75rem, 1.5rem + 2vw, 2.75rem);
   color: var(--color-dark);
 }
+.description {
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+  line-height: 1.33;
+}
 
 .header__social-icon {
   width: 30px;
@@ -80,7 +84,7 @@
 .social-icon--youtube::before {
   background-image: url("../icons/socials/youtube.svg");
 }
-/* burger menu */
+/* burger menu*/
 
 .burger {
   position: relative;
@@ -175,4 +179,58 @@
   line-height: 1.2;
   color: var(--color-dark-translucent);
   margin-block: 24px;
+}
+
+/* carusel */
+
+.carousel__track {
+  --slides-viewport: 3;
+  --slides-gap: 24px;
+  display: grid;
+  grid-auto-columns: calc(
+    (100% - ((var(--slides-viewport) - 1) * var(--slides-gap))) /
+      var(--slides-viewport)
+  );
+  column-gap: var(--slides-gap);
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+.carousel__track::-webkit-scrollbar {
+  display: none;
+}
+.carousel {
+  position: relative;
+  padding-inline: calc(var(--button-width) / 2);
+}
+.carousel__slide {
+  scroll-snap-align: start;
+}
+.carousel__slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-red);
+  width: var(--button-width);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-light);
+}
+.carousel__button--prev {
+  left: 0;
+}
+.carousel__button--next {
+  right: 0;
 }
