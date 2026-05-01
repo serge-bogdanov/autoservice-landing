@@ -205,7 +205,7 @@
 
   /* achievement */
 
-  .carousel__track {
+  .carousel {
     --slides-viewport: 2;
     --slides-gap: 16px;
   }

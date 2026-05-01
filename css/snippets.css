@@ -181,24 +181,12 @@
   margin-block: 24px;
 }
 
-/* carusel */
+/* carousel */
 
 .carousel {
-  --carousel-gap: 20px;
+  --slides-gap: 20px;
   --slides-to-show: 3;
   position: relative;
-}
-
-.carousel__viewport {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;  
-  display: flex;
-  scroll-behavior: auto;
-}
-.carousel__viewport::-webkit-scrollbar {
-  display: none;
 }
 
 
@@ -214,7 +202,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-
+  
 }
 
 .carousel__button--prev {
@@ -225,10 +213,19 @@
   transform: translateY(-50%) scaleX(-1);
 }
 
+.carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
 .carousel__track {
-  display: flex;
+  display: flex;  
   width: 100%;
-  column-gap: var(--carousel-gap);
+  column-gap: var(--slides-gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;  
+  scroll-behavior: auto;
 }
 
 .carousel__slide {
@@ -242,14 +239,16 @@
   .carousel__slide {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: calc((100% - var(--carousel-gap) * (var(--slides-to-show) - 1)) / var(--slides-to-show));
+    flex-basis: calc((100% - var(--slides-gap) * (var(--slides-to-show) - 1)) / var(--slides-to-show));
   }
 }
 
-.carousel__slide-image {
+/* achievement */
+
+.achievement-carousel__slide-image {
   display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  min-height: 100%;
+  min-width: 100%;
   object-fit: cover;  
   border-radius: 12px;
 }
