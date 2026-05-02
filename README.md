@@ -6,7 +6,7 @@
 
 ## Демо
 
-- **Ссылка**: `https://serge-bogdanov.github.io/autoservice-landing/`
+- **Ссылка**: https://serge-bogdanov.github.io/autoservice-landing/
 
 ## Технологии и принципы
 
