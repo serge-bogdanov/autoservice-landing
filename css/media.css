@@ -5,8 +5,25 @@
   .social-icon--colorful:hover {
     background-color: var(--color-dark);
   }
-}
+  .carousel__slide {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(
+      (100% - var(--slides-gap) * (var(--slides-to-show) - 1)) /
+        var(--slides-to-show)
+    );
+  }
+  .feedback .video__play-button {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  .feedback .carousel__slide--active .video__play-button {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
+}
 @media (max-width: 1180px) {
   /* variebles */
 
@@ -15,6 +32,8 @@
   }
 
   /* snippents */
+
+  
   .logo__icon {
     width: 40px;
   }
@@ -174,6 +193,14 @@
     width: 44px;
   }
 
+  /* cars */
+  .cars {
+    --cars-card-inner-gap: 16px;
+  }
+
+  
+
+
   /* process */
 
   .process__step-content-item {
@@ -206,8 +233,8 @@
   /* achievement */
 
   .carousel {
-    --slides-viewport: 2;
     --slides-gap: 16px;
+    --slides-to-show: 2;
   }
 
   .achievement .container {
@@ -223,6 +250,12 @@
 
   .achievement__button {
     order: 1;
+  }
+
+  /* feedback */
+  
+  .feedback .carousel__button {
+    display: none;
   }
 
   /* consult */
@@ -250,6 +283,10 @@
 }
 
 @media (max-width: 775px) {
+
+  .button {
+    min-width: 100%;
+  }
   /* achievement */
 
   .carousel__track {
@@ -258,6 +295,41 @@
 
   .carousel__button {
     display: none;
+  }
+
+  /* feedback */
+  .feedback {
+    padding-block: 64px;
+  }
+
+  .feedback__title {
+    margin-bottom: 28px;
+  }
+
+  .feedback .carousel {
+    padding-inline: var(--padding-inline);
+  }
+
+  .feedback .carousel__track {
+    height: auto;
+    align-items: stretch;
+  }
+  
+
+  .feedback .carousel__slide,
+  .feedback .carousel__slide--active {
+    transform: none;
+    opacity: 1;
+  }
+
+  .feedback .video {
+    max-width: none;
+    border-radius: 24px;
+  }
+
+  .feedback .video__description {
+    opacity: 1;
+    margin-top: 16px;
   }
 
   /* team */

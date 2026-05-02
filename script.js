@@ -86,6 +86,24 @@ function initCarousels() {
     const hasClones = slides.some((slide) =>
       slide.classList.contains("carousel__slide--clone"),
     );
+    const isFeedbackCarousel = Boolean(carousel.closest(".feedback"));
+
+    const updateFeedbackActiveSlide = () => {
+      if (!isFeedbackCarousel) return;
+
+      const viewportCenter = viewport.scrollLeft + viewport.offsetWidth / 2;
+
+      slides.forEach((slide) => {
+        const slideCenter = slide.offsetLeft + slide.offsetWidth / 2;
+        const distanceFromCenter = Math.abs(viewportCenter - slideCenter);
+
+        if (distanceFromCenter < slide.offsetWidth / 2) {
+          slide.classList.add("carousel__slide--active");
+        } else {
+          slide.classList.remove("carousel__slide--active");
+        }
+      });
+    };
 
     if (hasClones) {
       viewport.scrollTo({
@@ -93,6 +111,7 @@ function initCarousels() {
         behavior: "auto",
       });
     }
+    requestAnimationFrame(updateFeedbackActiveSlide);
 
     prevButton.addEventListener("click", () => {
       viewport.scrollBy({ left: -scrollStep, behavior: "smooth" });
@@ -109,26 +128,99 @@ function initCarousels() {
     let isJumping = false;
 
     viewport.addEventListener("scroll", () => {
-      if (!hasClones || isJumping) return;
+      if (hasClones && !isJumping) {
+        const scrollLeft = viewport.scrollLeft;
 
-      if (viewport.scrollLeft <= 1) {
-        isJumping = true;
-        viewport.scrollTo({ left: rightBoundary, behavior: "auto" });
-        requestAnimationFrame(() => {
-          isJumping = false;
-        });
-      } else if (viewport.scrollLeft >= rightBoundary + scrollAmount - 1) {
-        isJumping = true;
-        viewport.scrollTo({ left: scrollAmount, behavior: "auto" });
-        requestAnimationFrame(() => {
-          isJumping = false;
-        });
+        if (scrollLeft <= 1) {
+          isJumping = true;
+          viewport.scrollTo({ left: rightBoundary, behavior: "auto" });
+          requestAnimationFrame(() => {
+            isJumping = false;
+          });
+        } else if (scrollLeft >= rightBoundary + scrollAmount - 1) {
+          isJumping = true;
+          viewport.scrollTo({ left: scrollAmount, behavior: "auto" });
+          requestAnimationFrame(() => {
+            isJumping = false;
+          });
+        }
       }
+
+      updateFeedbackActiveSlide();
+    });
+
+    window.addEventListener("resize", updateFeedbackActiveSlide);
+  });
+}
+
+function initVideos() {
+  const videoContainers = document.querySelectorAll("[data-js-video]");
+
+  videoContainers.forEach((container) => {
+    container.addEventListener("click", function () {
+      const videoId = this.dataset.videoId;
+      if (!videoId) return;
+
+      const iframe = document.createElement("iframe");
+      iframe.setAttribute(
+        "src",
+        `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`,
+      );
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute(
+        "allow",
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+      );
+      iframe.setAttribute("allowfullscreen", "");
+
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.position = "absolute";
+      iframe.style.top = "0";
+      iframe.style.left = "0";
+
+      this.innerHTML = "";
+      this.appendChild(iframe);
     });
   });
 }
 
+initVideos();
 initCarousels();
+
+function initVideo() {
+  const videoContainers = document.querySelectorAll(".video-container");
+
+  videoContainers.forEach((container) => {
+    container.addEventListener("click", function () {
+      const videoId = this.dataset.videoId;
+
+      const iframe = document.createElement("iframe");
+
+      iframe.setAttribute(
+        "src",
+        `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`,
+      );
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute(
+        "allow",
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+      );
+      iframe.setAttribute("allowfullscreen", "");
+
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.position = "absolute";
+      iframe.style.top = "0";
+      iframe.style.left = "0";
+
+      this.innerHTML = "";
+      this.appendChild(iframe);
+    });
+  });
+}
+
+initVideo();
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

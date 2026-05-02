@@ -37,30 +37,6 @@
   font-display: swap;
 }
 
-:root {
-  --color-dark: #000000;
-  --color-dark-translucent: rgb(0 0 0 / 0.8);
-  --color-dark-transparent: rgb(0 0 0 / 0.3);
-  --color-light: #ffffff;
-  --color-light-alt: #f4f6f8;
-  --color-dark-grey: #242628;
-  --color-red-translucent: rgb(250 0 44 / 0.15);
-  --color-red: #f50e30;
-
-  --font-family: "Inter";
-  --button-width: 64px;
-
-  --container: 1280px;
-  --padding-inline: 30px;
-
-  --container-width: calc(var(--container) + var(--padding-inline) * 2);
-
-  --transition-duration: 0.4s;
-
-  --z-menu: 100;
-  --z-burger: 200;
-}
-
 body {
   font-family: var(--font-family);
   font-weight: 400;

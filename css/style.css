@@ -1,8 +1,15 @@
-.header__burger {
-  display: none;
-}
+@import url(./normalize.css);
+@import url(./default.css);
+@import url(./variables.css);
+@import url(./snippets.css);
+
+/* header */
+
 .header {
   padding-top: 40px;
+}
+.header__burger {
+  display: none;
 }
 
 .header .container {
@@ -270,7 +277,7 @@
 
 .cars-card__title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 .cars-card__spec {
@@ -297,7 +304,7 @@
 }
 .cars-card__spec-value {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   order: 3;
 }
@@ -316,7 +323,7 @@
   max-width: 170px;
 }
 .cars-card__prises-value {
-  font-size: 24px;
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
   line-height: 1;
 }
 .cars-card__prises-value--fair {
@@ -628,6 +635,84 @@
   display: flex;
   column-gap: 12px;
 }
+
+/* feedback */
+
+.feedback {
+  background-color: var(--color-light-alt);
+  padding-block: 100px;
+}
+
+.feedback__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.feedback .carousel {
+  width: 100%;
+  padding-inline: clamp(16px, 4vw, 48px);
+}
+
+
+.feedback .carousel__button--prev {
+  left: clamp(100px, 13vw, 250px);
+  
+}
+
+.feedback .carousel__button--next {
+  right: clamp(100px, 13vw, 250px);
+}
+
+.feedback .carousel__track {
+  align-items: center;
+  height: 500px; /* Высота для маневра масштабом */
+}
+
+.feedback .carousel__slide {
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  transform: scale(0.85);
+  opacity: 0.6;
+}
+
+.feedback .carousel__slide--active {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.feedback .video {
+  border-radius: 20px;
+  border: 2px solid rgb(0 0 0 / 0.12);
+  box-shadow: 0px 8px 24px rgb(0 0 0 / 0.08);
+}
+
+.feedback .video__description {
+  max-width: 800px;
+  margin-top: 18px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.feedback .video__description-title {
+  font-weight: 500;
+  font-size: clamp(1.25rem, 1rem + 0.6vw, 1.75rem);
+  line-height: 1.25;
+}
+
+.feedback .video__description-price {
+  color: var(--color-red);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+
+
+.feedback .carousel__slide--active .video__description {
+  opacity: 1;
+}
+
 /* FAQ */
 
 .faq {
@@ -721,7 +806,7 @@
 }
 
 .consult__agree {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #666;
   display: flex;
   gap: 8px;
