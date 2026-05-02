@@ -62,23 +62,69 @@ handleMobileMenu(mediaQuery);
 
 function initCarousels() {
   const allCarousels = document.querySelectorAll("[data-js-carousel]");
+
   allCarousels.forEach((carousel) => {
-    const track = document.querySelector("[data-js-track]");
-    const prevButton = document.querySelector("[data-js-prev]");
-    const nextButton = document.querySelector("[data-js-next]");
+    const prevButton = carousel.querySelector("[data-js-prev]");
+    const nextButton = carousel.querySelector("[data-js-next]");
+    const track = carousel.querySelector("[data-js-track]");
+    const viewport = carousel.querySelector("[data-js-viewport]");
 
-    let currentIndex = 0;
-    
-    const slideWidth = track.firstElementChild.offsetWidth;
-    // track.style.transition = "none";
-    // track.style.translate = `-${slideWidth * (currentIndex + 1)}px`;
+    if (!prevButton || !nextButton || !track || !viewport) return;
 
+    const slides = Array.from(track.children);
+    const slidesToShow = parseInt(
+      getComputedStyle(carousel).getPropertyValue("--slides-to-show") || 1,
+    );
+    const slideWidth = slides[0].offsetWidth;
+    const slideGap = parseInt(
+      getComputedStyle(carousel).getPropertyValue("--carousel-gap") || 0,
+    );
 
-    if (!track || !prevButton || !nextButton) return;
+    const scrollStep = slideWidth + slideGap;
+    const scrollAmount = scrollStep * slidesToShow;
 
-    const ANIMATION_TIME = 0.5;
+    const hasClones = slides.some((slide) =>
+      slide.classList.contains("carousel__slide--clone"),
+    );
 
-    images = [...track.children];
+    if (hasClones) {
+      viewport.scrollTo({
+        left: scrollAmount,
+        behavior: "auto",
+      });
+    }
+
+    prevButton.addEventListener("click", () => {
+      viewport.scrollBy({ left: -scrollStep, behavior: "smooth" });
+    });
+    nextButton.addEventListener("click", () => {
+      viewport.scrollBy({ left: scrollStep, behavior: "smooth" });
+    });
+
+    const totalOriginalSlides = slides.filter(
+      (slide) => !slide.classList.contains("carousel__slide--clone"),
+    ).length;
+
+    const rightBoundary = scrollStep * totalOriginalSlides;
+    let isJumping = false;
+
+    viewport.addEventListener("scroll", () => {
+      if (!hasClones || isJumping) return;
+
+      if (viewport.scrollLeft <= 1) {
+        isJumping = true;
+        viewport.scrollTo({ left: rightBoundary, behavior: "auto" });
+        requestAnimationFrame(() => {
+          isJumping = false;
+        });
+      } else if (viewport.scrollLeft >= rightBoundary + scrollAmount - 1) {
+        isJumping = true;
+        viewport.scrollTo({ left: scrollAmount, behavior: "auto" });
+        requestAnimationFrame(() => {
+          isJumping = false;
+        });
+      }
+    });
   });
 }
 

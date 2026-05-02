@@ -244,14 +244,10 @@
 
 /* cars */
 
-
 .cars {
   padding-block: 100px 120px;
   background-color: var(--color-light-alt);
-}
-
-.cars .container {
-  
+  --cars-card-inner-gap: 20px;
 }
 .cars__title {
   margin-bottom: 20px;
@@ -259,36 +255,78 @@
 .cars__description {
   margin-bottom: 40px;
 }
-.cars__cards {
 
-}
 .cars__card {
+  padding: 20px 24px;
+  background-color: var(--color-light);
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
 }
-.cars-card {
-}
-.cars-card__figure {
-}
+
 .cars-card__image {
+  margin-bottom: 24px;
+  border-radius: 12px;
 }
-.cars-card__caption {
-}
+
 .cars-card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 }
-.cars-card__details {
+.cars-card__spec {
+  display: grid;
+  gap: var(--cars-card-inner-gap);
 }
-.cars-card__detail {
+.cars-card__spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  &::before {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    order: 2;
+  }
 }
-.cars-card__detail-name {
+.cars-card__spec-name {
+  line-height: 1.25;
+  opacity: 0.5;
+  order: 1;
 }
-.cars-card__detail-value {
+.cars-card__spec-value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  order: 3;
 }
-.cars-card__prices {
+.cars-card__prises {
+  margin-block: calc(var(--cars-card-inner-gap) + 4px);
+  display: grid;
+  gap: var(--cars-card-inner-gap);
 }
-.cars-card__price-item {
+.cars-card__prises-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.cars-card__detail-label {
+.cars-card__prises-name {
+  line-height: 1.25;
+  max-width: 170px;
 }
-.button {
+.cars-card__prises-value {
+  font-size: 24px;
+  line-height: 1;
+}
+.cars-card__prises-value--fair {
+  font-weight: 900;
+  background-color: var(--color-red-translucent);
+  color: var(--color-red);
+}
+
+.cars .button {
+  min-width: 100%;
 }
 
 /* process   */
@@ -498,7 +536,6 @@
 }
 
 .achievement__description {
-
   opacity: 0.8;
 
   margin-bottom: 32px;
@@ -519,6 +556,13 @@
   font-size: clamp(1.2rem, 1rem + 1.25vw, 2.25rem);
 }
 
+.achievement .carousel__slide-inner {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
 /* team */
 

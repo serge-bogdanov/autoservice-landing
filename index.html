@@ -186,9 +186,654 @@
           <button class="about-us__button button">Оставить заявку</button>
         </div>
       </section>
-      <!-- <section class="cars">
-        ... (секция временно скрыта)
-      </section> -->
+      <section class="cars">
+        <div class="container">
+          <h2 class="cars__title medium-title">Какие авто привозим?</h2>
+          <p class="cars__description description">
+            Привозим авто не старше 7 лет на момент растаможки.
+          </p>
+          <div class="cars__carousel carousel" data-js-carousel>
+            <button
+              class="carousel__button carousel__button--prev"
+              data-js-prev
+              aria-label="Предыдущий слайд"
+            >
+              <img
+                src="./icons/arrow.svg"
+                alt=""
+                class="carousel__button-icon"
+              />
+            </button>
+            <button
+              class="carousel__button carousel__button--next"
+              data-js-next
+              aria-label="Следующий слайд"
+            >
+              <img
+                src="./icons/arrow.svg"
+                alt=""
+                class="carousel__button-icon"
+              />
+            </button>
+            <div class="carousel__viewport" data-js-viewport>
+              <ul class="cars__cards carousel__track" data-js-track>
+                <li class="cars__card cars-card carousel__slide carousel__slide--clone">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/1.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide carousel__slide--clone">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/2.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide carousel__slide--clone">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/3.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide">
+                  <figure class="cars-card__figure carousel__slide--inner">
+                    <img
+                      src="./images/carousel/4.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/5.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/6.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/1.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/2.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/3.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide carousel__slide--clone">
+                  <figure class="cars-card__figure carousel__slide--inner">
+                    <img
+                      src="./images/carousel/4.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide carousel__slide--clone">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/5.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="cars__card cars-card carousel__slide carousel__slide--clone">
+                  <figure class="cars-card__figure carousel__slide-inner">
+                    <img
+                      src="./images/carousel/6.webp"
+                      alt=""
+                      class="cars-card__image"
+                    />
+                    <figcaption class="cars-card__caption">
+                      <p class="cars-card__title">Toyota RAV4 2022</p>
+                      <dl class="cars-card__spec">
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Пробег</dt>
+                          <dd class="cars-card__spec-value">5 700 км</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Объем двигателя</dt>
+                          <dd class="cars-card__spec-value">2.0</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Мощность</dt>
+                          <dd class="cars-card__spec-value">149 л.с.</dd>
+                        </div>
+                        <div class="cars-card__spec-item">
+                          <dt class="cars-card__spec-name">Коробка</dt>
+                          <dd class="cars-card__spec-value">Автомат</dd>
+                        </div>
+                      </dl>
+                      <dl class="cars-card__prises">
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена на вторичном рынке в РФ
+                          </dt>
+                          <dd class="cars-card__prises-value">3 300 000 ₽</dd>
+                        </div>
+                        <div class="cars-card__prises-item">
+                          <dt class="cars-card__prises-name">
+                            Цена автомобиля “под ключ”
+                          </dt>
+                          <dd
+                            class="cars-card__prises-value cars-card__prises-value--fair"
+                          >
+                            2 700 000 ₽
+                          </dd>
+                        </div>
+                      </dl>
+                      <button class="button" type="button">
+                        Оставить заявку
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="process" id="how-to-buy">
         <div class="container">
@@ -509,55 +1154,148 @@
               <b class="achievement__header-highlight--accent">240 000 000 ₽</b>
             </p>
           </header>
-          <div class="achievement__carousel  achievement-carousel carousel" aria-label="Галерея автомобилей" data-js-carousel>
-              <button
-                class="carousel__button carousel__button--prev achievement-carousel__button"
-                data-js-prev
-                aria-label="Предыдущий слайд"
-              >
-                <img
-                  src="./icons/arrow.svg"
-                  alt=""
-                  class="carousel__button-icon"
-                />
-              </button>
-              <button
-                class="carousel__button carousel__button--next achievement-carousel__button"
-                data-js-next
-                aria-label="Следующий слайд"
-              >
-                <img
-                  src="./icons/arrow.svg"
-                  alt=""
-                  class="carousel__button-icon"
-                />
-              </button>
-            <ul class="carousel__track achievement__carousel-track" data-js-track>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/6.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/1.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/2.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/3.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/4.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/5.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/6.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-              <li class="carousel__slide carousel__slide--clone achievement-carousel__slide">
-                <img src="./images/achievement/1.webp" alt="" class="carousel__slide-inner achievement-carousel__slide-image" width="400" height="300">
-              </li>
-            </ul>
+          <div
+            class="carousel"
+            aria-label="Галерея автомобилей"
+            data-js-carousel
+          >
+            <button
+              class="carousel__button carousel__button--prev"
+              data-js-prev
+              aria-label="Предыдущий слайд"
+            >
+              <img
+                src="./icons/arrow.svg"
+                alt=""
+                class="carousel__button-icon"
+              />
+            </button>
+            <button
+              class="carousel__button carousel__button--next"
+              data-js-next
+              aria-label="Следующий слайд"
+            >
+              <img
+                src="./icons/arrow.svg"
+                alt=""
+                class="carousel__button-icon"
+              />
+            </button>
+
+            <div class="carousel__viewport" data-js-viewport>
+              <ul class="carousel__track" data-js-track>
+                <li class="carousel__slide carousel__slide--clone">
+                  <img
+                    src="./images/carousel/4.webp"
+                    alt="Автомобиль 4"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide carousel__slide--clone">
+                  <img
+                    src="./images/carousel/5.webp"
+                    alt="Автомобиль 5"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide carousel__slide--clone">
+                  <img
+                    src="./images/carousel/6.webp"
+                    alt="Автомобиль 6"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+
+                <li class="carousel__slide">
+                  <img
+                    src="./images/carousel/1.webp"
+                    alt="Автомобиль 1"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide">
+                  <img
+                    src="./images/carousel/2.webp"
+                    alt="Автомобиль 2"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide">
+                  <img
+                    src="./images/carousel/3.webp"
+                    alt="Автомобиль 3"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide">
+                  <img
+                    src="./images/carousel/4.webp"
+                    alt="Автомобиль 4"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide">
+                  <img
+                    src="./images/carousel/5.webp"
+                    alt="Автомобиль 5"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide">
+                  <img
+                    src="./images/carousel/6.webp"
+                    alt="Автомобиль 6"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+
+                <li class="carousel__slide carousel__slide--clone">
+                  <img
+                    src="./images/carousel/1.webp"
+                    alt="Автомобиль 1"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide carousel__slide--clone">
+                  <img
+                    src="./images/carousel/2.webp"
+                    alt="Автомобиль 2"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+                <li class="carousel__slide carousel__slide--clone">
+                  <img
+                    src="./images/carousel/3.webp"
+                    alt="Автомобиль 3"
+                    class="carousel__slide-inner"
+                    width="400"
+                    height="300"
+                  />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

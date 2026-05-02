@@ -189,6 +189,16 @@
   position: relative;
 }
 
+.carousel__viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+  scrollbar-width: none;
+}
+
+.carousel__viewport::-webkit-scrollbar {
+  display: none;
+}
 
 .carousel__button {
   position: absolute;
@@ -202,30 +212,21 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  
 }
 
 .carousel__button--prev {
   left: -2%;
 }
+
 .carousel__button--next {
   right: -2%;
   transform: translateY(-50%) scaleX(-1);
 }
 
-.carousel__track::-webkit-scrollbar {
-  display: none;
-}
-
 .carousel__track {
-  display: flex;  
+  display: flex;
   width: 100%;
   column-gap: var(--slides-gap);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;  
-  scroll-behavior: auto;
 }
 
 .carousel__slide {
@@ -239,16 +240,9 @@
   .carousel__slide {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: calc((100% - var(--slides-gap) * (var(--slides-to-show) - 1)) / var(--slides-to-show));
+    flex-basis: calc(
+      (100% - var(--slides-gap) * (var(--slides-to-show) - 1)) /
+        var(--slides-to-show)
+    );
   }
-}
-
-/* achievement */
-
-.achievement-carousel__slide-image {
-  display: block;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;  
-  border-radius: 12px;
 }
